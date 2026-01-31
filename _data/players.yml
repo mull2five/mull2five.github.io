@@ -15,6 +15,7 @@
 - id: max_staas
   handles:
     unity_league: 10328
+    mtg_elo: e40ljd9z
     melee: BullletTime
 
 - id: zdenek_koch
