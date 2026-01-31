@@ -1,0 +1,59 @@
+name: Update Player Info
+
+on:
+  schedule:
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'latest'
+
+      - name: Install mtg-playerinfo
+        run: npm install -g mtg-playerinfo
+
+      - name: Update player JSON files
+        run: |
+          npm install js-yaml
+          node -e '
+          const fs = require("fs");
+          const yaml = require("js-yaml");
+          const { execSync } = require("child_process");
+
+          const players = yaml.load(fs.readFileSync("_data/players.yml", "utf8"));
+
+          for (const player of players) {
+            if (player.handles) {
+              let args = [];
+              if (player.handles.unity_league) args.push(`--unity-id ${player.handles.unity_league}`);
+              if (player.handles.mtg_elo) args.push(`--mtgelo-id ${player.handles.mtg_elo}`);
+              if (player.handles.melee) args.push(`--melee-user ${player.handles.melee}`);
+              if (player.handles.topdeck) args.push(`--topdeck-handle ${player.handles.topdeck}`);
+
+              if (args.length > 0) {
+                const cmd = `mtg-playerinfo ${args.join(" ")}`;
+                console.log(`Updating ${player.id}: ${cmd}`);
+                try {
+                  const output = execSync(cmd).toString();
+                  fs.writeFileSync(`_data/player_info/${player.id}.json`, output);
+                } catch (error) {
+                  console.error(`Failed to update ${player.id}:`, error.message);
+                }
+              }
+            }
+          }
+          '
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Update player info JSON files"
+          file_pattern: "_data/player_info/*.json"
