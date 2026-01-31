@@ -13,8 +13,24 @@ layout: default
 <section id="players">
   <h2>Our Players</h2>
   <div class="players-container">
+    {% assign player_list = "" | split: "," %}
     {% for player_entry in site.data.players %}
       {% assign player_id = player_entry.id %}
+      {% assign player_data = site.data.player_info[player_id] %}
+      
+      {% assign eu_rank = player_data.sources["Unity League"].data["Rank Europe"] | default: 99999 %}
+      {% capture sort_key %}{{ eu_rank | prepend: "000000" | slice: -6, 6 }}{% endcapture %}
+      
+      {% capture player_item %}{{ sort_key }}|{{ player_id }}{% endcapture %}
+      {% assign player_list = player_list | push: player_item %}
+    {% endfor %}
+
+    {% assign sorted_player_list = player_list | sort %}
+
+    {% for player_item in sorted_player_list %}
+      {% assign parts = player_item | split: "|" %}
+      {% assign player_id = parts[1] %}
+      {% assign player_entry = site.data.players | where: "id", player_id | first %}
       {% assign player_data = site.data.player_info[player_id] %}
       {% include player_card.html player=player_data extra=player_entry %}
     {% endfor %}
