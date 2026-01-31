@@ -12,9 +12,10 @@
   {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
 
   {% assign player_photo = include.extra.photo | default: include.player.photo %}
-  {% assign player_hometown = include.extra.hometown | default: include.player.general.Hometown %}
-  {% assign player_age = include.extra.age | default: include.player.general.Age %}
+  {% assign player_hometown = include.player.general.Hometown | default: include.extra.hometown %}
+  {% assign player_age = include.player.general.Age | default: include.extra.age %}
   {% assign player_country = include.extra.country | default: include.player.general.Country %}
+  {% assign player_bio = include.player.general.Bio | default: include.extra.bio %}
 
   <!-- Compact Tile View -->
   <div class="player-card-tile">
@@ -94,9 +95,9 @@
             </div>
             {% endif %}
           </div>
-          {% if include.extra.bio %}
+          {% if player_bio %}
           <div class="player-bio-container">
-            <p class="player-bio">{{ include.extra.bio }}</p>
+            <p class="player-bio">{{ player_bio }}</p>
           </div>
           {% endif %}
         </div>

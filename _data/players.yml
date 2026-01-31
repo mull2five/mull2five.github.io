@@ -14,13 +14,13 @@
     instagram: bkimminich
 
 - id: max_staas
-  # bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
-  country: de
+  handles:
+    unity_league: 10328
+    melee: BullletTime
 
 - id: zdenek_koch
   handles:
     unity_league: 30767
   photo: assets/images/players/zdenek_koch.jpg
-  country: de
   hometown: Hamburg
   age: 38

@@ -8,8 +8,8 @@
     "Unity League": {
       "url": "https://unityleague.gg/player/10328/",
       "data": {
-        "Rank Germany": "24",
-        "Rank Europe": "204",
+        "Rank Germany": "25",
+        "Rank Europe": "206",
         "Rank Points": "432"
       }
     },
@@ -19,6 +19,12 @@
         "player_id": "e40ljd9z",
         "current_rating": "1622",
         "record": "24-20-0"
+      }
+    },
+    "Melee": {
+      "url": "https://melee.gg/Profile/Index/BulletTime",
+      "data": {
+        "username": "BulletTime"
       }
     }
   }
