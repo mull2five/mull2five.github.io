@@ -16,6 +16,7 @@
   {% assign player_age = include.player.general.Age | default: include.extra.age %}
   {% assign player_country = include.extra.country | default: include.player.general.Country %}
   {% assign player_bio = include.player.general.Bio | default: include.extra.bio %}
+  {% assign total_winrate = include.player.general["Win Rate"] %}
 
   <!-- Compact Tile View -->
   <div class="player-card-tile">
@@ -40,6 +41,10 @@
         <div class="tile-stat">
           <span class="tile-stat-label">EU</span>
           <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["Rank Europe"] }}{% else %}n/a{% endif %}</span>
+        </div>
+        <div class="tile-stat">
+          <span class="tile-stat-label">Winrate</span>
+          <span class="tile-stat-value {% unless total_winrate %}missing{% endunless %}">{% if total_winrate %}{{ total_winrate }}{% else %}n/a{% endif %}</span>
         </div>
       </div>
     </div>
@@ -137,10 +142,24 @@
       {% assign melee = include.player.sources["Melee"] %}
       {% assign topdeck = include.player.sources["Topdeck"] %}
 
-      {% if mtg_elo.data.record or melee.data.record or topdeck.data.Record or topdeck.data["Win Rate"] %}
+      {% if mtg_elo.data.record or ul.data.Record or ul.data["Win Rate"] or melee.data.record or melee.data["Win Rate"] or topdeck.data.Record or topdeck.data["Win Rate"] %}
       <div class="tournament-record">
         <h3>Tournament Record</h3>
         <div class="record-grid">
+          {% if ul.data.Record %}
+          <a href="{{ ul.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Unity League Record</span>
+            {{ ul.data.Record }}
+          </a>
+          {% endif %}
+
+          {% if ul.data["Win Rate"] %}
+          <a href="{{ ul.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Unity League Winrate</span>
+            {{ ul.data["Win Rate"] }}
+          </a>
+          {% endif %}
+
           {% if mtg_elo.data.record %}
           <a href="{{ mtg_elo.url }}" target="_blank" class="record-item linked-record">
             <span class="record-label">MTG Elo Record</span>
@@ -152,6 +171,13 @@
           <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
             <span class="record-label">Melee Record</span>
             {{ melee.data.record }}
+          </a>
+          {% endif %}
+
+          {% if melee.data["Win Rate"] %}
+          <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Melee Winrate</span>
+            {{ melee.data["Win Rate"] }}
           </a>
           {% endif %}
 

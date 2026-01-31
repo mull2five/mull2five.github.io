@@ -2,7 +2,8 @@
   "name": "Max Staas",
   "photo": null,
   "general": {
-    "Country": "de"
+    "Country": "de",
+    "Win Rate": "56.77%"
   },
   "sources": {
     "Unity League": {
@@ -10,7 +11,9 @@
       "data": {
         "Rank Germany": "25",
         "Rank Europe": "206",
-        "Rank Points": "432"
+        "Rank Points": "432",
+        "Record": "23-16-0",
+        "Win Rate": "59.0%"
       }
     },
     "MTG Elo Project": {
@@ -18,7 +21,8 @@
       "data": {
         "player_id": "e40ljd9z",
         "current_rating": "1622",
-        "record": "24-20-0"
+        "record": "24-20-0",
+        "Win Rate": "54.55%"
       }
     },
     "Melee": {

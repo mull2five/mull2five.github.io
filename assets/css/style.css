@@ -125,6 +125,7 @@ hr {
 .tile-stats-row {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .tile-stat {

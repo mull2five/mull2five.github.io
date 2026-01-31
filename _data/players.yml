@@ -1,5 +1,4 @@
 - id: bjoern_kimminich
-  # bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
   photo: assets/images/players/bjoern_kimminich.jpg
   handles:
     unity_league: 16215
@@ -24,3 +23,19 @@
   photo: assets/images/players/zdenek_koch.jpg
   hometown: Hamburg
   age: 38
+
+- id: dominik_mueller
+  hometown: Hamburg
+  country: de
+  age: 28
+
+- id: paul_fischer
+  hometown: Hamburg
+  country: de
+  age: 29
+
+- id: andre_bauer
+  handles:
+    unity_league: 35406
+  photo: assets/images/players/andre_bauer.jpg
+  age: 36
