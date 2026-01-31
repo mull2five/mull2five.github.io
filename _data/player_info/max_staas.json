@@ -1,34 +1,25 @@
 {
   "name": "Max Staas",
-  "photo": null,
+  "photo": "https://cdn.melee.gg/userphotos/userprofiles/ce143b22-b9e3-4a60-95f6-15607e7ab980.jpg?v=0",
   "general": {
     "Country": "de",
-    "Win Rate": "56.77%"
+    "Win Rate": "59.00%"
   },
   "sources": {
     "Unity League": {
       "url": "https://unityleague.gg/player/10328/",
       "data": {
-        "Rank Germany": "25",
-        "Rank Europe": "206",
+        "Rank Germany": "26",
+        "Rank Europe": "210",
         "Rank Points": "432",
         "Record": "23-16-0",
         "Win Rate": "59.0%"
       }
     },
-    "MTG Elo Project": {
-      "url": "https://mtgeloproject.net/profile/e40ljd9z",
-      "data": {
-        "player_id": "e40ljd9z",
-        "current_rating": "1622",
-        "record": "24-20-0",
-        "Win Rate": "54.55%"
-      }
-    },
     "Melee": {
-      "url": "https://melee.gg/Profile/Index/BulletTime",
+      "url": "https://melee.gg/Profile/Index/BullletTime",
       "data": {
-        "username": "BulletTime"
+        "username": "BullletTime"
       }
     }
   }
