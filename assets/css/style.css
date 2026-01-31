@@ -73,15 +73,111 @@ hr {
 .player-card {
   background-color: #1e1e1e;
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: 1px solid #333;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* Compact Tile Styles */
+.player-card-tile {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+.tile-photo-container {
+  flex: 0 0 60px;
+  height: 60px;
+}
+
+.tile-photo, .tile-photo-placeholder {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #4da6ff;
+}
+
+.tile-photo-placeholder {
+  background-color: #2a2a2a;
+}
+
+.tile-info {
+  flex: 1;
+}
+
+.tile-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.tile-stats-row {
+  display: flex;
+  gap: 15px;
+}
+
+.tile-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.tile-stat-label {
+  font-size: 0.7em;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.tile-stat-value {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #4da6ff;
+}
+
+.tile-expand-icon {
+  color: #888;
+  transition: transform 0.3s ease;
+}
+
+.player-card.expanded .tile-expand-icon {
+  transform: rotate(180deg);
+}
+
+/* Expanded Content */
+.player-card-expanded-content {
+  display: none;
+  padding: 0 20px 20px 20px;
+  border-top: 1px solid #333;
+}
+
+.player-card.expanded .player-card-expanded-content {
+  display: block;
+}
+
+.player-card.expanded {
+  cursor: default;
+}
+
+.player-card.expanded .player-card-tile {
+  cursor: pointer;
+  border-bottom: none;
+  background-color: #252525;
 }
 
 .player-card-header {
   display: flex;
   align-items: flex-start;
+  margin-top: 20px;
   margin-bottom: 20px;
   gap: 20px;
 }
@@ -115,11 +211,6 @@ hr {
   align-items: center;
 }
 
-.player-main-info h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
 
 .player-general-data {
   list-style: none;
@@ -130,6 +221,20 @@ hr {
 .player-general-data li {
   font-size: 0.9em;
   color: #bbb;
+}
+
+.player-details-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.player-country-flag img {
+  display: block;
+  height: 24px;
+  width: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 

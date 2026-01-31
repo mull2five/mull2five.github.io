@@ -1,4 +1,4 @@
-<div class="player-card">
+<div class="player-card" onclick="this.classList.toggle('expanded')">
   {% assign player_name = include.player.name %}
   {% if player_name == nil or player_name == "" %}
     {% assign name_parts = include.extra.id | split: "_" %}
@@ -7,119 +7,173 @@
     {% endcapture %}
     {% assign player_name = player_name | strip %}
   {% endif %}
-  <div class="player-card-header">
-    {% if include.player.photo %}
-    <img src="{{ include.player.photo }}" alt="{{ player_name }}" class="player-photo">
-    {% endif %}
-    <div class="player-main-info">
-      <div class="player-info-content">
-        <div class="player-primary-details">
-          <h2>{{ player_name }}</h2>
-          <ul class="player-general-data">
-            {% for info in include.player.general %}
-            {% if info[0] != "Team" %}
-            <li><strong>{{ info[0] }}:</strong> {{ info[1] }}</li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-          {% if include.extra.social_media %}
-          <div class="player-social">
-            {% if include.extra.social_media.twitter %}
-            <a href="https://twitter.com/{{ include.extra.social_media.twitter }}" target="_blank" title="Twitter"><img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon"></a>
-            {% endif %}
-            {% if include.extra.social_media.bluesky %}
-            <a href="https://bsky.app/profile/{{ include.extra.social_media.bluesky }}" target="_blank" title="Bluesky"><img src="https://simpleicons.org/icons/bluesky.svg" alt="Bluesky" class="social-icon"></a>
-            {% endif %}
-            {% if include.extra.social_media.twitch %}
-            <a href="https://twitch.tv/{{ include.extra.social_media.twitch }}" target="_blank" title="Twitch"><img src="https://simpleicons.org/icons/twitch.svg" alt="Twitch" class="social-icon"></a>
-            {% endif %}
-            {% if include.extra.social_media.youtube %}
-            <a href="https://youtube.com/@{{ include.extra.social_media.youtube }}" target="_blank" title="YouTube"><img src="https://simpleicons.org/icons/youtube.svg" alt="YouTube" class="social-icon"></a>
-            {% endif %}
-            {% if include.extra.social_media.instagram %}
-            <a href="https://instagram.com/{{ include.extra.social_media.instagram }}" target="_blank" title="Instagram"><img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
-            {% endif %}
-          </div>
-          {% endif %}
+
+  {% assign ul = include.player.sources["Unity League"] %}
+  {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
+
+  {% assign player_photo = include.extra.photo | default: include.player.photo %}
+  {% assign player_hometown = include.extra.hometown | default: include.player.general.Hometown %}
+  {% assign player_age = include.extra.age | default: include.player.general.Age %}
+  {% assign player_country = include.extra.country | default: include.player.general.Country %}
+
+  <!-- Compact Tile View -->
+  <div class="player-card-tile">
+    <div class="tile-photo-container">
+      {% if player_photo %}
+      <img src="{{ player_photo }}" alt="{{ player_name }}" class="tile-photo">
+      {% else %}
+      <div class="tile-photo-placeholder"></div>
+      {% endif %}
+    </div>
+    <div class="tile-info">
+      <div class="tile-name">{{ player_name }}</div>
+      <div class="tile-stats-row">
+        {% if mtg_elo %}
+        <div class="tile-stat">
+          <span class="tile-stat-label">ELO</span>
+          <span class="tile-stat-value">{{ mtg_elo.data.current_rating }}</span>
         </div>
-        {% if include.extra.bio %}
-        <div class="player-bio-container">
-          <p class="player-bio">{{ include.extra.bio }}</p>
+        {% endif %}
+        {% if ul %}
+        <div class="tile-stat">
+          <span class="tile-stat-label">DE</span>
+          <span class="tile-stat-value">#{{ ul.data["Rank Germany"] }}</span>
+        </div>
+        <div class="tile-stat">
+          <span class="tile-stat-label">EU</span>
+          <span class="tile-stat-value">#{{ ul.data["Rank Europe"] }}</span>
         </div>
         {% endif %}
       </div>
+    </div>
+    <div class="tile-expand-icon">
+      <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
     </div>
   </div>
 
-  <div class="player-stats">
-    {% assign ul = include.player.sources["Unity League"] %}
-    {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
-
-    {% if ul or mtg_elo %}
-    <div class="stat-section">
-      <h3>Ranks & Ratings</h3>
-      <div class="stat-grid">
-        {% if ul %}
-        <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
-          <span class="stat-label">Unity League Rank DE</span>
-          <span class="stat-value">{{ ul.data["Rank Germany"] }}</span>
-        </a>
-        <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
-          <span class="stat-label">Unity League Rank EU</span>
-          <span class="stat-value">{{ ul.data["Rank Europe"] }}</span>
-        </a>
-        <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
-          <span class="stat-label">Unity League Points</span>
-          <span class="stat-value">{{ ul.data["Rank Points"] }}</span>
-        </a>
-        {% endif %}
-
-        {% if mtg_elo %}
-        <a href="{{ mtg_elo.url }}" target="_blank" class="stat-item linked-stat">
-          <span class="stat-label">MTG Elo Rating</span>
-          <span class="stat-value">{{ mtg_elo.data.current_rating }}</span>
-        </a>
-        {% endif %}
+  <!-- Expanded Details View -->
+  <div class="player-card-expanded-content">
+    <div class="player-card-header">
+      {% if player_photo %}
+      <img src="{{ player_photo }}" alt="{{ player_name }}" class="player-photo">
+      {% endif %}
+      <div class="player-main-info">
+        <div class="player-info-content">
+          <div class="player-primary-details">
+            <div class="player-details-row">
+              <ul class="player-general-data">
+                {% if player_age %}
+                <li><strong>Age:</strong> {{ player_age }}</li>
+                {% endif %}
+                {% if player_hometown %}
+                <li><strong>Hometown:</strong> {{ player_hometown }}</li>
+                {% endif %}
+              </ul>
+              {% if player_country %}
+              <div class="player-country-flag">
+                <img src="https://flagcdn.com/w40/{{ player_country | downcase }}.png"
+                     srcset="https://flagcdn.com/w80/{{ player_country | downcase }}.png 2x"
+                     alt="{{ player_country }}"
+                     title="{{ player_country }}">
+              </div>
+              {% endif %}
+            </div>
+            {% if include.extra.social_media %}
+            <div class="player-social" onclick="event.stopPropagation()">
+              {% if include.extra.social_media.twitter %}
+              <a href="https://twitter.com/{{ include.extra.social_media.twitter }}" target="_blank" title="Twitter"><img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon"></a>
+              {% endif %}
+              {% if include.extra.social_media.bluesky %}
+              <a href="https://bsky.app/profile/{{ include.extra.social_media.bluesky }}" target="_blank" title="Bluesky"><img src="https://simpleicons.org/icons/bluesky.svg" alt="Bluesky" class="social-icon"></a>
+              {% endif %}
+              {% if include.extra.social_media.twitch %}
+              <a href="https://twitch.tv/{{ include.extra.social_media.twitch }}" target="_blank" title="Twitch"><img src="https://simpleicons.org/icons/twitch.svg" alt="Twitch" class="social-icon"></a>
+              {% endif %}
+              {% if include.extra.social_media.youtube %}
+              <a href="https://youtube.com/@{{ include.extra.social_media.youtube }}" target="_blank" title="YouTube"><img src="https://simpleicons.org/icons/youtube.svg" alt="YouTube" class="social-icon"></a>
+              {% endif %}
+              {% if include.extra.social_media.instagram %}
+              <a href="https://instagram.com/{{ include.extra.social_media.instagram }}" target="_blank" title="Instagram"><img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+              {% endif %}
+            </div>
+            {% endif %}
+          </div>
+          {% if include.extra.bio %}
+          <div class="player-bio-container">
+            <p class="player-bio">{{ include.extra.bio }}</p>
+          </div>
+          {% endif %}
+        </div>
       </div>
     </div>
-    {% endif %}
 
-    {% assign melee = include.player.sources["Melee"] %}
-    {% assign topdeck = include.player.sources["Topdeck"] %}
+    <div class="player-stats" onclick="event.stopPropagation()">
+      {% if ul or mtg_elo %}
+      <div class="stat-section">
+        <h3>Ranks & Ratings</h3>
+        <div class="stat-grid">
+          {% if ul %}
+          <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">Unity League Rank DE</span>
+            <span class="stat-value">{{ ul.data["Rank Germany"] }}</span>
+          </a>
+          <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">Unity League Rank EU</span>
+            <span class="stat-value">{{ ul.data["Rank Europe"] }}</span>
+          </a>
+          <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">Unity League Points</span>
+            <span class="stat-value">{{ ul.data["Rank Points"] }}</span>
+          </a>
+          {% endif %}
 
-    {% if mtg_elo.data.record or melee.data.record or topdeck.data.Record or topdeck.data["Win Rate"] %}
-    <div class="tournament-record">
-      <h3>Tournament Record</h3>
-      <div class="record-grid">
-        {% if mtg_elo.data.record %}
-        <a href="{{ mtg_elo.url }}" target="_blank" class="record-item linked-record">
-          <span class="record-label">MTG Elo Record</span>
-          {{ mtg_elo.data.record }}
-        </a>
-        {% endif %}
-
-        {% if melee.data.record %}
-        <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
-          <span class="record-label">Melee Record</span>
-          {{ melee.data.record }}
-        </a>
-        {% endif %}
-
-        {% if topdeck.data.Record %}
-        <a href="{{ topdeck.url }}" target="_blank" class="record-item linked-record">
-          <span class="record-label">Topdeck Record</span>
-          {{ topdeck.data.Record }}
-        </a>
-        {% endif %}
-
-        {% if topdeck.data["Win Rate"] %}
-        <a href="{{ topdeck.url }}" target="_blank" class="record-item linked-record">
-          <span class="record-label">Topdeck Winrate</span>
-          {{ topdeck.data["Win Rate"] }}
-        </a>
-        {% endif %}
+          {% if mtg_elo %}
+          <a href="{{ mtg_elo.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">MTG Elo Rating</span>
+            <span class="stat-value">{{ mtg_elo.data.current_rating }}</span>
+          </a>
+          {% endif %}
+        </div>
       </div>
+      {% endif %}
+
+      {% assign melee = include.player.sources["Melee"] %}
+      {% assign topdeck = include.player.sources["Topdeck"] %}
+
+      {% if mtg_elo.data.record or melee.data.record or topdeck.data.Record or topdeck.data["Win Rate"] %}
+      <div class="tournament-record">
+        <h3>Tournament Record</h3>
+        <div class="record-grid">
+          {% if mtg_elo.data.record %}
+          <a href="{{ mtg_elo.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">MTG Elo Record</span>
+            {{ mtg_elo.data.record }}
+          </a>
+          {% endif %}
+
+          {% if melee.data.record %}
+          <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Melee Record</span>
+            {{ melee.data.record }}
+          </a>
+          {% endif %}
+
+          {% if topdeck.data.Record %}
+          <a href="{{ topdeck.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Topdeck Record</span>
+            {{ topdeck.data.Record }}
+          </a>
+          {% endif %}
+
+          {% if topdeck.data["Win Rate"] %}
+          <a href="{{ topdeck.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">Topdeck Winrate</span>
+            {{ topdeck.data["Win Rate"] }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
     </div>
-    {% endif %}
   </div>
 </div>

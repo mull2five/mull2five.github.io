@@ -7,7 +7,6 @@
         <header class="site-header">
            <img src="{{ site.logo }}" alt="{{ site.title }} Logo" class="site-logo">
            <h1>{{ site.title }}</h1>
-           {% if site.team.social %}
            <div class="team-social">
              {% if site.team.social.twitter %}
              <a href="https://twitter.com/{{ site.team.social.twitter }}" target="_blank" title="Twitter"><img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon"></a>
@@ -26,7 +25,6 @@
              {% endif %}
              <a href="https://github.com/mull2five" target="_blank" title="GitHub"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="social-icon"></a>
            </div>
-           {% endif %}
         </header>
         {{ content }}
       </main>

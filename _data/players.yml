@@ -1,14 +1,22 @@
 - id: bjoern_kimminich
   bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
+  handles:
+    unity_league: 16215
+    mtg_elo: 3irvwtmk
+    melee: k0shiii
+    topdeck: k0shiii
   social_media:
-    twitter: "bkimminich"
-    bluesky: "bkimminich.bsky.social"
-    twitch: "koshiii"
-    youtube: "kimminich"
-    instagram: "bkimminich"
+    twitter: bkimminich
+    bluesky: bkimminich.bsky.social
+    twitch: koshiii
+    youtube: BjörnKimminich
+    instagram: bkimminich
 
 - id: max_staas
   bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
+  country: de
 
 - id: zdenek_koch
   bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
+  country: de
+  hometown: Hamburg
