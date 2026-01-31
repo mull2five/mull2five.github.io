@@ -144,6 +144,10 @@ hr {
   color: #4da6ff;
 }
 
+.tile-stat-value.missing {
+  color: #555;
+}
+
 .tile-expand-icon {
   color: #888;
   transition: transform 0.3s ease;
@@ -151,6 +155,10 @@ hr {
 
 .player-card.expanded .tile-expand-icon {
   transform: rotate(180deg);
+}
+
+.player-card.expanded .tile-photo {
+  filter: grayscale(100%);
 }
 
 /* Expanded Content */

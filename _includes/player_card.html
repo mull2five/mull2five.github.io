@@ -28,22 +28,18 @@
     <div class="tile-info">
       <div class="tile-name">{{ player_name }}</div>
       <div class="tile-stats-row">
-        {% if mtg_elo %}
         <div class="tile-stat">
           <span class="tile-stat-label">ELO</span>
-          <span class="tile-stat-value">{{ mtg_elo.data.current_rating }}</span>
+          <span class="tile-stat-value {% unless mtg_elo %}missing{% endunless %}">{% if mtg_elo %}{{ mtg_elo.data.current_rating }}{% else %}n/a{% endif %}</span>
         </div>
-        {% endif %}
-        {% if ul %}
         <div class="tile-stat">
           <span class="tile-stat-label">DE</span>
-          <span class="tile-stat-value">#{{ ul.data["Rank Germany"] }}</span>
+          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["Rank Germany"] }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">EU</span>
-          <span class="tile-stat-value">#{{ ul.data["Rank Europe"] }}</span>
+          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["Rank Europe"] }}{% else %}n/a{% endif %}</span>
         </div>
-        {% endif %}
       </div>
     </div>
     <div class="tile-expand-icon">
