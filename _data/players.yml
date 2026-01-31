@@ -1,0 +1,14 @@
+- id: bjoern_kimminich
+  bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
+  social_media:
+    twitter: "bkimminich"
+    bluesky: "bkimminich.bsky.social"
+    twitch: "koshiii"
+    youtube: "kimminich"
+    instagram: "bkimminich"
+
+- id: max_staas
+  bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."
+
+- id: zdenek_koch
+  bio: "Lorem Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis nibh vel velit tincidunt tincidunt."

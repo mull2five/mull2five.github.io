@@ -1,0 +1,24 @@
+title: Mull to Five
+description: GitHub page of Mull to Five (Mull2Five / M25)
+baseurl: ""
+url: "https://mull2five.github.io"
+
+logo: https://raw.githubusercontent.com/mull2five/m25-resources/refs/heads/main/logo/m25-logo-white.svg
+
+team:
+  name: Mull to Five
+  short_name: Mull2Five
+  minimal_name: M25
+  social:
+    twitter: dummy_m25
+    instagram: dummy_m25
+    twitch: dummy_m25
+
+collections:
+  players:
+    output: false
+
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

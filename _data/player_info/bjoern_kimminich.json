@@ -1,0 +1,45 @@
+{
+  "name": "Björn Kimminich",
+  "photo": "https://unityleague.gg/media/player_profile/1000023225.jpg",
+  "general": {
+    "Age": "45",
+    "Team": "Mull to Five",
+    "Country": "de",
+    "Hometown": "Hamburg"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/16215/",
+      "data": {
+        "Local organizer": "Mulligan TCG Shop",
+        "Rank Germany": "58",
+        "Rank Europe": "576",
+        "Rank Points": "274"
+      }
+    },
+    "MTG Elo Project": {
+      "url": "https://mtgeloproject.net/profile/3irvwtmk",
+      "data": {
+        "player_id": "3irvwtmk",
+        "current_rating": "1466",
+        "record": "9-12-1"
+      }
+    },
+    "Melee": {
+      "url": "https://melee.gg/Profile/Index/k0shiii",
+      "data": {
+        "username": "k0shiii"
+      }
+    },
+    "Topdeck": {
+      "url": "https://topdeck.gg/profile/@k0shiii",
+      "data": {
+        "handle": "@k0shiii",
+        "Tournaments": "2",
+        "Record": "4-6-1",
+        "Win Rate": "36.36%",
+        "Conversion": "0%"
+      }
+    }
+  }
+}

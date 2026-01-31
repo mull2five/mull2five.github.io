@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      <main class="page-content" aria-label="Content">
+        <header class="site-header">
+           <img src="{{ site.logo }}" alt="{{ site.title }} Logo" class="site-logo">
+           <h1>{{ site.title }}</h1>
+           {% if site.team.social %}
+           <div class="team-social">
+             {% if site.team.social.twitter %}
+             <a href="https://twitter.com/{{ site.team.social.twitter }}" target="_blank" title="Twitter"><img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon"></a>
+             {% endif %}
+             {% if site.team.social.bluesky %}
+             <a href="https://bsky.app/profile/{{ site.team.social.bluesky }}" target="_blank" title="Bluesky"><img src="https://simpleicons.org/icons/bluesky.svg" alt="Bluesky" class="social-icon"></a>
+             {% endif %}
+             {% if site.team.social.twitch %}
+             <a href="https://twitch.tv/{{ site.team.social.twitch }}" target="_blank" title="Twitch"><img src="https://simpleicons.org/icons/twitch.svg" alt="Twitch" class="social-icon"></a>
+             {% endif %}
+             {% if site.team.social.youtube %}
+             <a href="https://youtube.com/@{{ site.team.social.youtube }}" target="_blank" title="YouTube"><img src="https://simpleicons.org/icons/youtube.svg" alt="YouTube" class="social-icon"></a>
+             {% endif %}
+             {% if site.team.social.instagram %}
+             <a href="https://instagram.com/{{ site.team.social.instagram }}" target="_blank" title="Instagram"><img src="https://simpleicons.org/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+             {% endif %}
+             <a href="https://github.com/mull2five" target="_blank" title="GitHub"><img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="social-icon"></a>
+           </div>
+           {% endif %}
+        </header>
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>

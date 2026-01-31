@@ -1,0 +1,25 @@
+{
+  "name": "Max Staas",
+  "photo": null,
+  "general": {
+    "Country": "de"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/10328/",
+      "data": {
+        "Rank Germany": "24",
+        "Rank Europe": "204",
+        "Rank Points": "432"
+      }
+    },
+    "MTG Elo Project": {
+      "url": "https://mtgeloproject.net/profile/e40ljd9z",
+      "data": {
+        "player_id": "e40ljd9z",
+        "current_rating": "1622",
+        "record": "24-20-0"
+      }
+    }
+  }
+}
