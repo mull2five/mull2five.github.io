@@ -40,3 +40,8 @@
     unity_league: 35406
   photo: assets/images/players/andre_bauer.jpg
   age: 36
+
+- id: fabian_alex
+  handles:
+    unity_league: 31006
+  age: 37

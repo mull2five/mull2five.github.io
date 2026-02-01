@@ -1,0 +1,21 @@
+{
+  "name": "Fabian Alex",
+  "photo": null,
+  "general": {
+    "Country": "de",
+    "Win Rate": "64.00%"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/31006/",
+      "data": {
+        "Local organizer": "Mulligan TCG Shop",
+        "Rank Germany": "190",
+        "Rank Europe": "2050",
+        "Rank Points": "69",
+        "Record": "16-9-0",
+        "Win Rate": "64.0%"
+      }
+    }
+  }
+}
