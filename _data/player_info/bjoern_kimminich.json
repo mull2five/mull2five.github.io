@@ -32,14 +32,11 @@
     },
     "Melee": {
       "url": "https://melee.gg/Profile/Index/k0shiii",
-      "data": {
-        "username": "k0shiii"
-      }
+      "data": {}
     },
     "Topdeck": {
       "url": "https://topdeck.gg/profile/@k0shiii",
       "data": {
-        "handle": "@k0shiii",
         "Tournaments": "2",
         "Record": "4-6-1",
         "Win Rate": "36.36%",
