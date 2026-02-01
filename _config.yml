@@ -10,9 +10,7 @@ team:
   short_name: Mull2Five
   minimal_name: M25
   social:
-    # twitter: dummy_m25
-    # instagram: dummy_m25
-    # twitch: dummy_m25
+    bluesky: mull2five.bsky.social
 
 collections:
   players:
