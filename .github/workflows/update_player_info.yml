@@ -20,7 +20,7 @@ jobs:
           node-version: 'latest'
 
       - name: Install mtg-playerinfo
-        run: npm install -g mtg-playerinfo@1
+        run: npm install -g mtg-playerinfo@1.0.3
 
       - name: Update player JSON files
         run: |
