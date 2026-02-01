@@ -4,8 +4,9 @@ layout: default
 
 <section id="about-us">
   <h2>About Us</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>
+  Founded in early 2026, <strong>Mull 2 Five</strong> — also referred to as <strong>Mull2Five</strong> or simply <strong>M25</strong> — is a competitive Magic: The Gathering team based in Northern Germany. Even when the opening hand isn't perfect, we play to win. What started as a group of amateur enthusiasts in and around Hamburg has grown into a dedicated collective of players striving for the next level of competitive play. Our most commonly played format by far is Standard, but we also have players active in Modern and other formats.
+  </p>
 </section>
 
 <hr>
