@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: 'latest'
 
+      - name: Install mtg-playerinfo
+        run: npm install -g mtg-playerinfo@1
+
       - name: Update player JSON files
         run: |
           npm install js-yaml
@@ -38,7 +41,7 @@ jobs:
               if (player.handles.topdeck) args.push(`--topdeck-handle ${player.handles.topdeck}`);
 
               if (args.length > 0) {
-                const cmd = `npx mtg-playerinfo ${args.join(" ")}`;
+                const cmd = `mtg-playerinfo ${args.join(" ")}`;
                 console.log(`Updating ${player.id}: ${cmd}`);
                 try {
                   const output = execSync(cmd).toString();
