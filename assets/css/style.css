@@ -343,3 +343,76 @@ hr {
   font-size: 0.625rem;
   color: #666;
 }
+
+/* Mobile Responsive - Small Screens */
+@media (max-width: 768px) {
+  .player-card-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .player-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .player-main-info {
+    width: 100%;
+  }
+
+  .player-info-content {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .player-primary-details {
+    flex: 1;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .player-details-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .player-bio-container {
+    flex: 1;
+    width: 100%;
+    min-width: unset;
+    justify-content: flex-start;
+  }
+
+  .player-social {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-card-tile {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .tile-info {
+    flex-basis: 100%;
+  }
+
+  .tile-stats-row {
+    gap: 10px;
+  }
+}
+
