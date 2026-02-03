@@ -3,18 +3,18 @@
   "photo": null,
   "general": {
     "Country": "de",
-    "Win Rate": "64.60%"
+    "Win Rate": "63.00%"
   },
   "sources": {
     "Unity League": {
       "url": "https://unityleague.gg/player/30762/",
       "data": {
         "Local organizer": "Mulligan TCG Shop",
-        "Rank Germany": "124",
-        "Rank Europe": "1378",
-        "Rank Points": "129",
-        "Record": "31-17-0",
-        "Win Rate": "64.6%"
+        "Rank Germany": "54th",
+        "Rank Europe": "470th",
+        "Rank Points": "321",
+        "Record": "39-22-2",
+        "Win Rate": "63.0%"
       }
     }
   }
