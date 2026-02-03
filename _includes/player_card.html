@@ -12,6 +12,9 @@
   {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
 
   {% assign player_photo = include.extra.photo | default: include.player.photo %}
+  {% unless player_photo %}
+    {% assign player_photo = '/assets/images/players/placeholder.png' %}
+  {% endunless %}
   {% assign player_hometown = include.player.general.Hometown | default: include.extra.hometown %}
   {% assign player_age = include.player.general.Age | default: include.extra.age %}
   {% assign player_country = include.extra.country | default: include.player.general.Country %}
@@ -21,11 +24,7 @@
   <!-- Compact Tile View -->
   <div class="player-card-tile">
     <div class="tile-photo-container">
-      {% if player_photo %}
       <img src="{{ player_photo }}" alt="{{ player_name }}" class="tile-photo">
-      {% else %}
-      <div class="tile-photo-placeholder"></div>
-      {% endif %}
     </div>
     <div class="tile-info">
       <div class="tile-name">{{ player_name }}</div>
@@ -56,9 +55,7 @@
   <!-- Expanded Details View -->
   <div class="player-card-expanded-content">
     <div class="player-card-header">
-      {% if player_photo %}
       <img src="{{ player_photo }}" alt="{{ player_name }}" class="player-photo">
-      {% endif %}
       <div class="player-main-info">
         <div class="player-info-content">
           <div class="player-primary-details">
