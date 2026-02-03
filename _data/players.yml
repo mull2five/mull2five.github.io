@@ -17,6 +17,8 @@
     unity_league: 10328
     mtg_elo: e40ljd9z
     melee: BullletTime
+  social_media:
+    bluesky: bulllettime.bsky.social
 
 - id: zdenek_koch
   handles:
