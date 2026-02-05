@@ -1,5 +1,5 @@
 <div class="player-card" onclick="this.classList.toggle('expanded')">
-  {% assign player_name = include.player.name %}
+  {% assign player_name = include.extra.name | default: include.player.general.name %}
   {% if player_name == nil or player_name == "" %}
     {% assign name_parts = include.extra.id | split: "_" %}
     {% capture player_name %}
@@ -11,10 +11,10 @@
   {% assign ul = include.player.sources["Unity League"] %}
   {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
 
-  {% assign player_photo = include.extra.photo | default: include.player.photo %}
-  {% unless player_photo %}
+  {% assign player_photo = include.extra.photo | default: include.player.general.photo %}
+  {% if player_photo == nil or player_photo == "" %}
     {% assign player_photo = '/assets/images/players/placeholder.png' %}
-  {% endunless %}
+  {% endif %}
   {% assign player_hometown = include.player.general.hometown | default: include.extra.hometown %}
   {% assign player_age = include.player.general.age | default: include.extra.age %}
   {% assign player_pronouns = include.extra.pronouns | default: include.player.general.pronouns %}
