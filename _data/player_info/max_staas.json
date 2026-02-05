@@ -1,33 +1,35 @@
 {
-  "name": "Max Staas",
-  "photo": null,
-  "general": {
-    "Country": "de",
-    "Win Rate": "56.77%"
-  },
-  "sources": {
-    "Unity League": {
-      "url": "https://unityleague.gg/player/10328/",
-      "data": {
-        "Rank Germany": "27",
-        "Rank Europe": "223",
-        "Rank Points": "432",
-        "Record": "23-16-0",
-        "Win Rate": "59.0%"
-      }
-    },
-    "MTG Elo Project": {
-      "url": "https://mtgeloproject.net/profile/e40ljd9z",
-      "data": {
-        "player_id": "e40ljd9z",
-        "current_rating": "1622",
-        "record": "24-20-0",
-        "Win Rate": "54.55%"
-      }
-    },
-    "Melee": {
-      "url": "https://melee.gg/Profile/Index/BullletTime",
-      "data": {}
-    }
-  }
+  "general":  {
+          "name":  "Max Staas",
+          "photo":  null,
+          "country":  "de",
+          "win rate":  "56.77%"
+        },
+  "sources":  {
+          "Unity League":  {
+                     "url":  "https://unityleague.gg/player/10328/",
+                     "data":  {
+                            "rank germany":  "27",
+                            "rank europe":  "223",
+                            "rank points":  "432",
+                            "record":  "23-16-0",
+                            "win rate":  "59.0%"
+                          }
+                   },
+          "MTG Elo Project":  {
+                      "url":  "https://mtgeloproject.net/profile/e40ljd9z",
+                      "data":  {
+                             "player_id":  "e40ljd9z",
+                             "current_rating":  "1622",
+                             "record":  "24-20-0",
+                             "win rate":  "54.55%"
+                           }
+                    },
+          "Melee":  {
+                  "url":  "https://melee.gg/Profile/Index/BullletTime",
+                  "data":  {
+
+                       }
+                }
+        }
 }

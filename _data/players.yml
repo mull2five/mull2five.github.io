@@ -1,4 +1,5 @@
 - id: bjoern_kimminich
+  pronouns: He/Him
   photo: assets/images/players/bjoern_kimminich.jpg
   handles:
     unity_league: 16215
@@ -8,8 +9,6 @@
   social_media:
     twitter: bkimminich
     bluesky: bkimminich.bsky.social
-    twitch: koshiii
-    youtube: @BjörnKimminich
     instagram: bkimminich
 
 - id: max_staas

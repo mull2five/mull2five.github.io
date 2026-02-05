@@ -1,21 +1,21 @@
 {
-  "name": "Zdenek Koch",
-  "photo": null,
-  "general": {
-    "Country": "de",
-    "Win Rate": "34.00%"
-  },
-  "sources": {
-    "Unity League": {
-      "url": "https://unityleague.gg/player/30767/",
-      "data": {
-        "Local organizer": "Mulligan TCG Shop",
-        "Rank Germany": "191",
-        "Rank Europe": "1755",
-        "Rank Points": "99",
-        "Record": "15-29-9",
-        "Win Rate": "34.0%"
-      }
-    }
-  }
+  "general":  {
+          "name":  "Zdenek Koch",
+          "photo":  null,
+          "country":  "de",
+          "win rate":  "34.00%"
+        },
+  "sources":  {
+          "Unity League":  {
+                     "url":  "https://unityleague.gg/player/30767/",
+                     "data":  {
+                            "local organizer":  "Mulligan TCG Shop",
+                            "rank germany":  "191",
+                            "rank europe":  "1755",
+                            "rank points":  "99",
+                            "record":  "15-29-9",
+                            "win rate":  "34.0%"
+                          }
+                   }
+        }
 }

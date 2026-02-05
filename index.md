@@ -19,7 +19,7 @@ layout: default
       {% assign player_id = player_entry.id %}
       {% assign player_data = site.data.player_info[player_id] %}
       
-      {% assign eu_rank = player_data.sources["Unity League"].data["Rank Europe"] | default: 99999 %}
+      {% assign eu_rank = player_data.sources["Unity League"].data["rank europe"] | default: 99999 %}
       {% capture sort_key %}{{ eu_rank | prepend: "000000" | slice: -6, 6 }}{% endcapture %}
       
       {% capture player_item %}{{ sort_key }}|{{ player_id }}{% endcapture %}
