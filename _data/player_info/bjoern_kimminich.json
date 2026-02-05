@@ -7,18 +7,18 @@
     "Team": "Mull to Five",
     "Country": "de",
     "Hometown": "Hamburg",
-    "Win Rate": "42.09%"
+    "Win Rate": "42.29%"
   },
   "sources": {
     "Unity League": {
       "url": "https://unityleague.gg/player/16215/",
       "data": {
         "Local organizer": "Mulligan TCG Shop",
-        "Rank Germany": "69th",
-        "Rank Europe": "577th",
-        "Rank Points": "283",
-        "Record": "40-40-5",
-        "Win Rate": "49.0%"
+        "Rank Germany": "64",
+        "Rank Europe": "560",
+        "Rank Points": "292",
+        "Record": "42-41-5",
+        "Win Rate": "49.6%"
       }
     },
     "MTG Elo Project": {
