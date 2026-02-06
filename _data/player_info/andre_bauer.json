@@ -1,21 +1,23 @@
 {
-  "general":  {
-          "name":  "André Bauer",
-          "photo":  null,
-          "country":  "de",
-          "win rate":  "50.00%"
-        },
-  "sources":  {
-          "Unity League":  {
-                     "url":  "https://unityleague.gg/player/35406/",
-                     "data":  {
-                            "local organizer":  "Mulligan TCG Shop",
-                            "rank germany":  "234",
-                            "rank europe":  "2176",
-                            "rank points":  "66",
-                            "record":  "13-12-3",
-                            "win rate":  "50.0%"
-                          }
-                   }
-        }
+  "general": {
+    "name": "André Bauer",
+    "country": "de",
+    "win rate": "50.00%"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/35406/",
+      "data": {
+        "name": "André Bauer",
+        "photo": null,
+        "country": "de",
+        "local organizer": "Mulligan TCG Shop",
+        "rank germany": "239",
+        "rank europe": "2187",
+        "rank points": "66",
+        "record": "13-12-3",
+        "win rate": "50.0%"
+      }
+    }
+  }
 }
