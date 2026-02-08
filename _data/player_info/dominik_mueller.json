@@ -1,0 +1,23 @@
+{
+  "general": {
+    "name": "Dominik Müller",
+    "country": "de",
+    "win rate": "58.70%"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/30766/",
+      "data": {
+        "name": "Dominik Müller",
+        "photo": null,
+        "country": "de",
+        "local organizer": "Mulligan TCG Shop",
+        "rank germany": "251",
+        "rank europe": "2268",
+        "rank points": "62",
+        "record": "14-9-2",
+        "win rate": "58.7%"
+      }
+    }
+  }
+}
