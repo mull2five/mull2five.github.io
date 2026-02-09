@@ -1,0 +1,22 @@
+{
+  "general": {
+    "name": "Robin Schopf",
+    "country": "de",
+    "win rate": "66.70%"
+  },
+  "sources": {
+    "Unity League": {
+      "url": "https://unityleague.gg/player/33406/",
+      "data": {
+        "name": "Robin Schopf",
+        "photo": null,
+        "country": "de",
+        "rank germany": "288",
+        "rank europe": "2756",
+        "rank points": "33",
+        "record": "8-4-0",
+        "win rate": "66.7%"
+      }
+    }
+  }
+}
