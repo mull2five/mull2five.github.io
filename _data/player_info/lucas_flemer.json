@@ -2,7 +2,7 @@
   "general": {
     "name": "Lucas Flemer",
     "country": "de",
-    "win rate": "63.00%"
+    "win rate": "62.20%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "60",
-        "rank europe": "505",
-        "rank points": "321",
-        "record": "39-22-2",
-        "win rate": "63.0%"
+        "rank germany": "57",
+        "rank europe": "481",
+        "rank points": "330",
+        "record": "41-24-2",
+        "win rate": "62.2%"
       }
     }
   }

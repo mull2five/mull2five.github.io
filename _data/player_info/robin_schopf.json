@@ -2,7 +2,7 @@
   "general": {
     "name": "Robin Schopf",
     "country": "de",
-    "win rate": "66.70%"
+    "win rate": "62.50%"
   },
   "sources": {
     "Unity League": {
@@ -11,11 +11,11 @@
         "name": "Robin Schopf",
         "photo": null,
         "country": "de",
-        "rank germany": "288",
-        "rank europe": "2756",
-        "rank points": "33",
-        "record": "8-4-0",
-        "win rate": "66.7%"
+        "rank germany": "277",
+        "rank europe": "2608",
+        "rank points": "42",
+        "record": "10-6-0",
+        "win rate": "62.5%"
       }
     }
   }
