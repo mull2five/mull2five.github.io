@@ -182,6 +182,13 @@
           </a>
           {% endif %}
 
+          {% if mtg_elo.data["win rate"] %}
+          <a href="{{ mtg_elo.url }}" target="_blank" class="record-item linked-record">
+            <span class="record-label">MTG Elo Winrate</span>
+            {{ mtg_elo.data["win rate"] }}
+          </a>
+          {% endif %}
+
           {% if melee.data.record %}
           <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
             <span class="record-label">Melee Record</span>
