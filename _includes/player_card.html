@@ -50,7 +50,12 @@
           <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["rank europe"] }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
-          <span class="tile-stat-label">Winrate</span>
+          <span class="tile-stat-label">
+            Winrate
+            {% if total_winrate %}
+            <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws aggregated from all sources"></span>
+            {% endif %}
+          </span>
           <span class="tile-stat-value {% unless total_winrate %}missing{% endunless %}">{% if total_winrate %}{{ total_winrate }}{% else %}n/a{% endif %}</span>
         </div>
       </div>
@@ -170,7 +175,10 @@
 
           {% if ul.data["win rate"] %}
           <a href="{{ ul.url }}" target="_blank" class="record-item linked-record">
-            <span class="record-label">Unity League Winrate</span>
+            <span class="record-label">
+              Unity League Winrate
+              <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on achieved match points, i.e. counting draws as 1/3 of a win"></span>
+            </span>
             {{ ul.data["win rate"] }}
           </a>
           {% endif %}
@@ -184,7 +192,10 @@
 
           {% if mtg_elo.data["win rate"] %}
           <a href="{{ mtg_elo.url }}" target="_blank" class="record-item linked-record">
-            <span class="record-label">MTG Elo Winrate</span>
+            <span class="record-label">
+              MTG Elo Winrate
+              <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
+            </span>
             {{ mtg_elo.data["win rate"] }}
           </a>
           {% endif %}
@@ -198,7 +209,10 @@
 
           {% if melee.data["win rate"] %}
           <a href="{{ melee.url }}" target="_blank" class="record-item linked-record">
-            <span class="record-label">Melee Winrate</span>
+            <span class="record-label">
+              Melee Winrate
+              <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
+            </span>
             {{ melee.data["win rate"] }}
           </a>
           {% endif %}
@@ -212,7 +226,10 @@
 
           {% if topdeck.data["win rate"] %}
           <a href="{{ topdeck.url }}" target="_blank" class="record-item linked-record">
-            <span class="record-label">Topdeck Winrate</span>
+            <span class="record-label">
+              Topdeck Winrate
+              <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
+            </span>
             {{ topdeck.data["win rate"] }}
           </a>
           {% endif %}

@@ -339,6 +339,17 @@ hr {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
+.info-icon {
+  cursor: help;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.info-icon:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 .footer-text {
   font-size: 0.625rem;
   color: #666;
