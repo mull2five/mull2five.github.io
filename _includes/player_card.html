@@ -60,8 +60,7 @@
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">MTGA Rank</span>
-          {% assign untapped = include.player.sources["Untapped.gg"] %}
-          <span class="tile-stat-value {% unless untapped.data.mtga_rank %}missing{% endunless %}">{% if untapped.data.mtga_rank %}{{ untapped.data.mtga_rank }}{% else %}n/a{% endif %}</span>
+          <span class="tile-stat-value {% unless include.player.general.mtga_rank.constructed %}missing{% endunless %}">{% if include.player.general.mtga_rank.constructed %}{{ include.player.general.mtga_rank.constructed }}{% else %}n/a{% endif %}</span>
         </div>
       </div>
     </div>
@@ -162,10 +161,16 @@
           {% endif %}
 
           {% assign untapped = include.player.sources["Untapped.gg"] %}
-          {% if untapped %}
+          {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.constructed %}
           <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
-            <span class="stat-label">Untapped MTGA Rank</span>
-            <span class="stat-value">{{ untapped.data.mtga_rank }}</span>
+            <span class="stat-label">MTGA Rank Constructed</span>
+            <span class="stat-value">{{ untapped.data.mtga_rank.constructed }}</span>
+          </a>
+          {% endif %}
+          {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.limited %}
+          <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">MTGA Rank Limited</span>
+            <span class="stat-value">{{ untapped.data.mtga_rank.limited }}</span>
           </a>
           {% endif %}
         </div>
