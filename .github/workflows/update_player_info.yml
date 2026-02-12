@@ -20,7 +20,7 @@ jobs:
           node-version: 'latest'
 
       - name: Install mtg-playerinfo
-        run: npm install -g mtg-playerinfo@1.2.2
+        run: npm install -g mtg-playerinfo@1.3.0
 
       - name: Update player JSON files
         run: |
@@ -39,6 +39,7 @@ jobs:
               if (player.handles.mtg_elo) args.push(`--mtgelo-id ${player.handles.mtg_elo}`);
               if (player.handles.melee) args.push(`--melee-user ${player.handles.melee}`);
               if (player.handles.topdeck) args.push(`--topdeck-handle ${player.handles.topdeck}`);
+              if (player.handles.untapped) args.push(`--untapped-id ${player.handles.untapped}`);
 
               if (args.length > 0) {
                 const cmd = `mtg-playerinfo ${args.join(" ")}`;
