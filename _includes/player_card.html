@@ -58,6 +58,11 @@
           </span>
           <span class="tile-stat-value {% unless total_winrate %}missing{% endunless %}">{% if total_winrate %}{{ total_winrate }}{% else %}n/a{% endif %}</span>
         </div>
+        <div class="tile-stat">
+          <span class="tile-stat-label">MTGA Rank</span>
+          {% assign untapped = include.player.sources["Untapped.gg"] %}
+          <span class="tile-stat-value {% unless untapped.data.mtga_rank %}missing{% endunless %}">{% if untapped.data.mtga_rank %}{{ untapped.data.mtga_rank }}{% else %}n/a{% endif %}</span>
+        </div>
       </div>
     </div>
     <div class="tile-expand-icon">
@@ -155,14 +160,23 @@
             <span class="stat-value">{{ mtg_elo.data.current_rating }}</span>
           </a>
           {% endif %}
+
+          {% assign untapped = include.player.sources["Untapped.gg"] %}
+          {% if untapped %}
+          <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
+            <span class="stat-label">Untapped MTGA Rank</span>
+            <span class="stat-value">{{ untapped.data.mtga_rank }}</span>
+          </a>
+          {% endif %}
         </div>
       </div>
       {% endif %}
 
       {% assign melee = include.player.sources["Melee"] %}
       {% assign topdeck = include.player.sources["Topdeck"] %}
+      {% assign untapped = include.player.sources["Untapped.gg"] %}
 
-      {% if mtg_elo.data.record or ul.data.record or ul.data["win rate"] or melee.data.record or melee.data["win rate"] or topdeck.data.record or topdeck.data["win rate"] %}
+      {% if mtg_elo.data.record or ul.data.record or ul.data["win rate"] or melee.data.record or melee.data["win rate"] or topdeck.data.record or topdeck.data["win rate"] or untapped.data.mtga_rank %}
       <div class="tournament-record">
         <h3>Tournament Record</h3>
         <div class="record-grid">
