@@ -3,6 +3,10 @@
     "name": "Max Staas",
     "country": "de",
     "pronouns": "He/Him",
+    "mtga_rank": {
+      "constructed": "Mythic #1215",
+      "limited": "Gold 1"
+    },
     "win rate": "56.63%"
   },
   "sources": {
@@ -35,6 +39,15 @@
         "name": "Max Staas",
         "pronouns": "He/Him",
         "bio": null
+      }
+    },
+    "Untapped.gg": {
+      "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
+      "data": {
+        "mtga_rank": {
+          "constructed": "Mythic #1215",
+          "limited": "Gold 1"
+        }
       }
     }
   }
