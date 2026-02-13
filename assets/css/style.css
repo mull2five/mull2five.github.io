@@ -162,7 +162,19 @@ hr {
   filter: grayscale(100%);
 }
 
-/* Expanded Content */
+.player-card.expanded .tile-stat-value {
+  opacity: 0.5;
+}
+
+.player-card.expanded .tile-stats-row > .tile-stat:nth-child(4) .tile-stat-value {
+  opacity: 1;
+}
+
+.player-card.expanded .tile-stat-value.mtga-rank {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
 .player-card-expanded-content {
   display: none;
   padding: 0 20px 20px 20px;
