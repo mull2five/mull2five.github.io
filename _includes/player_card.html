@@ -29,6 +29,45 @@
   {% assign player_bluesky = include.extra.social_media.bluesky | default: include.player.general.bluesky %}
   {% assign player_instagram = include.extra.social_media.instagram | default: include.player.general.instagram %}
 
+  {% comment %}
+  Helper to determine MTGA rank class based on the rank string
+  {% endcomment %}
+  {% assign mtga_rank_class = "" %}
+  {% assign constructed_rank = include.player.general.mtga_rank.constructed %}
+  {% if constructed_rank %}
+    {% if constructed_rank contains "Bronze" %}
+      {% assign mtga_rank_class = "mtga-rank-bronze" %}
+    {% elsif constructed_rank contains "Silver" %}
+      {% assign mtga_rank_class = "mtga-rank-silver" %}
+    {% elsif constructed_rank contains "Gold" %}
+      {% assign mtga_rank_class = "mtga-rank-gold" %}
+    {% elsif constructed_rank contains "Platinum" %}
+      {% assign mtga_rank_class = "mtga-rank-platinum" %}
+    {% elsif constructed_rank contains "Diamond" %}
+      {% assign mtga_rank_class = "mtga-rank-diamond" %}
+    {% elsif constructed_rank contains "Mythic" %}
+      {% assign mtga_rank_class = "mtga-rank-mythic" %}
+    {% endif %}
+  {% endif %}
+
+  {% assign mtga_limited_rank_class = "" %}
+  {% assign limited_rank = include.player.general.mtga_rank.limited %}
+  {% if limited_rank %}
+    {% if limited_rank contains "Bronze" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-bronze" %}
+    {% elsif limited_rank contains "Silver" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-silver" %}
+    {% elsif limited_rank contains "Gold" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-gold" %}
+    {% elsif limited_rank contains "Platinum" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-platinum" %}
+    {% elsif limited_rank contains "Diamond" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-diamond" %}
+    {% elsif limited_rank contains "Mythic" %}
+      {% assign mtga_limited_rank_class = "mtga-rank-mythic" %}
+    {% endif %}
+  {% endif %}
+
   <!-- Compact Tile View -->
   <div class="player-card-tile">
     <div class="tile-photo-container">
@@ -60,7 +99,7 @@
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">MTGA Rank</span>
-          <span class="tile-stat-value {% unless include.player.general.mtga_rank.constructed %}missing{% endunless %}">{% if include.player.general.mtga_rank.constructed %}{{ include.player.general.mtga_rank.constructed }}{% else %}n/a{% endif %}</span>
+          <span class="tile-stat-value mtga-rank {{ mtga_rank_class }} {% unless include.player.general.mtga_rank.constructed %}missing{% endunless %}">{% if include.player.general.mtga_rank.constructed %}{{ include.player.general.mtga_rank.constructed }}{% else %}n/a{% endif %}</span>
         </div>
       </div>
     </div>
@@ -164,13 +203,13 @@
           {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.constructed %}
           <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">MTGA Rank Constructed</span>
-            <span class="stat-value">{{ untapped.data.mtga_rank.constructed }}</span>
+            <span class="stat-value mtga-rank {{ mtga_rank_class }}">{{ untapped.data.mtga_rank.constructed }}</span>
           </a>
           {% endif %}
           {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.limited %}
           <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">MTGA Rank Limited</span>
-            <span class="stat-value">{{ untapped.data.mtga_rank.limited }}</span>
+            <span class="stat-value mtga-rank {{ mtga_limited_rank_class }}">{{ untapped.data.mtga_rank.limited }}</span>
           </a>
           {% endif %}
         </div>

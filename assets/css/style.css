@@ -355,6 +355,69 @@ hr {
   color: #666;
 }
 
+/* MTGA Rank Color Styling */
+.mtga-rank {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+  display: inline-block;
+  background-size: 200% 200%;
+  animation: shimmer 3s ease-in-out infinite;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    background-position: 200% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+
+.mtga-rank-bronze {
+  background: linear-gradient(135deg, #cd7f32, #a0613a, #cd7f32);
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(205, 127, 50, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.mtga-rank-silver {
+  background: linear-gradient(135deg, #e8e8e8, #b0b0b0, #e8e8e8);
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(200, 200, 200, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.mtga-rank-gold {
+  background: linear-gradient(135deg, #ffd700, #daa520, #ffd700);
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.mtga-rank-platinum {
+  background: linear-gradient(135deg, #e5e4e2, #c0c0c0, #e5e4e2);
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(200, 200, 200, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 0 15px rgba(150, 150, 150, 0.3);
+}
+
+.mtga-rank-diamond {
+  background: linear-gradient(135deg, #b9f2ff, #00d4ff, #b9f2ff);
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 212, 255, 0.5), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.mtga-rank-mythic {
+  background: linear-gradient(135deg, #ff8c00, #ffa500, #ff8c00);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
 /* Mobile Responsive - Small Screens */
 @media (max-width: 768px) {
   .player-card-header {
