@@ -28,6 +28,7 @@
   {% assign player_twitter = include.extra.social_media.twitter | default: include.player.general.twitter %}
   {% assign player_bluesky = include.extra.social_media.bluesky | default: include.player.general.bluesky %}
   {% assign player_instagram = include.extra.social_media.instagram | default: include.player.general.instagram %}
+  {% assign player_cardmarket = include.extra.social_media.cardmarket | default: include.player.general.cardmarket %}
 
   {% comment %}
   Helper to determine MTGA rank class based on the rank string
@@ -138,6 +139,9 @@
             </div>
             {% if player_twitter or player_bluesky or player_twitch or player_youtube or player_instagram or player_facebook %}
             <div class="player-social" onclick="event.stopPropagation()">
+              {% if player_cardmarket %}
+              <a href="https://www.cardmarket.com/de/Magic/Users/{{ player_cardmarket }}" target="_blank" title="Cardmarket"><img src="https://simpleicons.org/icons/cardmarket.svg" alt="Cardmarket" class="social-icon"></a>
+              {% endif %}
               {% if player_twitter %}
               <a href="https://twitter.com/{{ player_twitter }}" target="_blank" title="Twitter"><img src="https://simpleicons.org/icons/x.svg" alt="Twitter" class="social-icon"></a>
               {% endif %}

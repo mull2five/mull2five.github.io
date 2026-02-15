@@ -10,6 +10,7 @@
     twitter: bkimminich
     bluesky: bkimminich.bsky.social
     instagram: bkimminich
+    cardmarket: k0shiii
 
 - id: max_staas
   handles:
@@ -30,9 +31,12 @@
 - id: dominik_mueller
   handles:
     unity_league: 30766
+    untapped: ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ
   hometown: Hamburg
   country: de
   age: 28
+  social_media:
+    cardmarket: BlackwellScale
 
 - id: paul_fischer
   hometown: Hamburg
