@@ -2,6 +2,10 @@
   "general": {
     "name": "Dominik Müller",
     "country": "de",
+    "mtga_rank": {
+      "constructed": "Platinum 3",
+      "limited": "Gold 3"
+    },
     "win rate": "56.00%"
   },
   "sources": {
@@ -17,6 +21,15 @@
         "rank points": "62",
         "record": "14-9-2",
         "win rate": "58.7%"
+      }
+    },
+    "Untapped.gg": {
+      "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
+      "data": {
+        "mtga_rank": {
+          "constructed": "Platinum 3",
+          "limited": "Gold 3"
+        }
       }
     }
   }
