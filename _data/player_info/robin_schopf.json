@@ -2,7 +2,7 @@
   "general": {
     "name": "Robin Schopf",
     "country": "de",
-    "win rate": "62.50%"
+    "win rate": "60.00%"
   },
   "sources": {
     "Unity League": {
@@ -11,11 +11,12 @@
         "name": "Robin Schopf",
         "photo": null,
         "country": "de",
-        "rank germany": "289",
-        "rank europe": "2664",
-        "rank points": "42",
-        "record": "10-6-0",
-        "win rate": "62.5%"
+        "local organizer": "Mulligan TCG Shop",
+        "rank germany": "280",
+        "rank europe": "2538",
+        "rank points": "51",
+        "record": "12-8-0",
+        "win rate": "60.0%"
       }
     }
   }
