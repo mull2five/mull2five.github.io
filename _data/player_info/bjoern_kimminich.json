@@ -30,7 +30,7 @@
         "team": "Mull to Five",
         "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face with its \"Change the target of target spell or ability with a single target\" mode.",
         "rank germany": "62",
-        "rank europe": "505",
+        "rank europe": "506",
         "rank points": "334",
         "record": "52-47-5",
         "win rate": "51.6%"
@@ -62,6 +62,9 @@
       "data": {
         "name": "Björn Kimminich",
         "photo": "https://imagedelivery.net/kN_u_RUfFF6xsGMKYWhO1g/2a7b8d12-5924-4a58-5f9c-c0bf55766800/square",
+        "pronouns": "He/Him",
+        "twitter": "https://twitter.com/bkimminich",
+        "youtube": "https://www.youtube.com/@Bj%C3%B6rnKimminich",
         "tournaments": "2",
         "record": "4-6-1",
         "win rate": "36.36%",
