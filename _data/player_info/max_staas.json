@@ -4,7 +4,6 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
-      "constructed": "Mythic #1561",
       "limited": "Platinum 2"
     },
     "win rate": "56.32%"
@@ -17,7 +16,7 @@
         "photo": null,
         "country": "de",
         "rank germany": "38",
-        "rank europe": "328",
+        "rank europe": "332",
         "rank points": "441",
         "record": "25-18-0",
         "win rate": "58.1%"
@@ -45,7 +44,6 @@
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
         "mtga_rank": {
-          "constructed": "Mythic #1561",
           "limited": "Platinum 2"
         }
       }
