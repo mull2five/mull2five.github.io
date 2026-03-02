@@ -20,9 +20,11 @@ jobs:
           node-version: 'latest'
 
       - name: Install mtg-playerinfo
-        run: npm install -g mtg-playerinfo@1.4.2
+        run: npm install -g mtg-playerinfo@1.5.0
 
       - name: Update player JSON files
+        env:
+          UNTAPPED_SET_CODE: ${{ vars.UNTAPPED_SET_CODE }}
         run: |
           npm install js-yaml
           node -e '
