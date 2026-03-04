@@ -3,10 +3,7 @@
     "name": "Max Staas",
     "country": "de",
     "pronouns": "He/Him",
-    "mtga_rank": {
-      "constructed": "Mythic #0",
-      "limited": "Platinum 2"
-    },
+    "mtga_rank": {},
     "win rate": "56.32%"
   },
   "sources": {
@@ -16,8 +13,8 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "rank germany": "39",
-        "rank europe": "346",
+        "rank germany": "40",
+        "rank europe": "350",
         "rank points": "441",
         "record": "25-18-0",
         "win rate": "58.1%"
@@ -44,10 +41,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
-        "mtga_rank": {
-          "constructed": "Mythic #0",
-          "limited": "Platinum 2"
-        }
+        "mtga_rank": {}
       }
     }
   }
