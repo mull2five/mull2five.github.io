@@ -3,9 +3,10 @@
     "name": "Dominik Müller",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Diamond 1"
+      "constructed": "Diamond 1",
+      "limited": "Gold 3"
     },
-    "win rate": "53.57%"
+    "win rate": "58.06%"
   },
   "sources": {
     "Unity League": {
@@ -15,18 +16,19 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "275",
-        "rank europe": "2512",
-        "rank points": "69",
-        "record": "15-10-3",
-        "win rate": "57.1%"
+        "rank germany": "264",
+        "rank europe": "2348",
+        "rank points": "81",
+        "record": "18-10-3",
+        "win rate": "61.3%"
       }
     },
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
-          "constructed": "Diamond 1"
+          "constructed": "Diamond 1",
+          "limited": "Gold 3"
         }
       }
     }

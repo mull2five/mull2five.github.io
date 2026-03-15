@@ -3,9 +3,9 @@
     "name": "Thorben Manns",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Platinum 4"
+      "constructed": "Platinum 2"
     },
-    "win rate": "37.50%"
+    "win rate": "40.00%"
   },
   "sources": {
     "Unity League": {
@@ -15,18 +15,18 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "286",
-        "rank europe": "2595",
-        "rank points": "63",
-        "record": "12-17-3",
-        "win rate": "40.6%"
+        "rank germany": "274",
+        "rank europe": "2480",
+        "rank points": "72",
+        "record": "14-18-3",
+        "win rate": "42.9%"
       }
     },
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/26bc5895-e630-4e3c-85de-1ad6d62ed4b2/K4Q4M5EMSNB53KEKGXSKGOZEII",
       "data": {
         "mtga_rank": {
-          "constructed": "Platinum 4"
+          "constructed": "Platinum 2"
         }
       }
     }
