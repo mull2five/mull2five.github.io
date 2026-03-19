@@ -14,7 +14,7 @@
     "mtga_rank": {
       "constructed": "Platinum 3"
     },
-    "win rate": "48.47%"
+    "win rate": "49.71%"
   },
   "sources": {
     "Unity League": {
@@ -28,11 +28,11 @@
         "local organizer": "Mulligan TCG Shop",
         "team": "Mull to Five",
         "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face with its \"Change the target of target spell or ability with a single target\" mode.",
-        "rank germany": "60",
-        "rank europe": "531",
-        "rank points": "385",
-        "record": "63-58-5",
-        "win rate": "51.3%"
+        "rank germany": "57",
+        "rank europe": "502",
+        "rank points": "398",
+        "record": "66-58-6",
+        "win rate": "52.3%"
       }
     },
     "MTG Elo Project": {
@@ -64,9 +64,9 @@
         "pronouns": "He/Him",
         "twitter": "bkimminich",
         "youtube": "@BjörnKimminich",
-        "tournaments": "3",
-        "record": "7-7-1",
-        "win rate": "46.67%",
+        "tournaments": "4",
+        "record": "10-7-2",
+        "win rate": "52.63%",
         "conversion": "0%"
       }
     },
