@@ -2,7 +2,6 @@
   "general": {
     "name": "Max Staas",
     "country": "de",
-    "pronouns": "He/Him",
     "mtga_rank": {
       "constructed": "Platinum 3"
     },
@@ -15,8 +14,8 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "rank germany": "48",
-        "rank europe": "415",
+        "rank germany": "52",
+        "rank europe": "475",
         "rank points": "441",
         "record": "25-18-0",
         "win rate": "58.1%"
@@ -30,14 +29,6 @@
         "current_rating": "1622",
         "record": "24-20-0",
         "win rate": "54.55%"
-      }
-    },
-    "Melee": {
-      "url": "https://melee.gg/Profile/Index/BullletTime",
-      "data": {
-        "name": "Max Staas",
-        "pronouns": "He/Him",
-        "bio": null
       }
     },
     "Untapped.gg": {

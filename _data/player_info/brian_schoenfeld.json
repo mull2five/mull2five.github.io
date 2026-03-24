@@ -2,7 +2,7 @@
   "general": {
     "name": "Brian Schönfeld",
     "country": "de",
-    "win rate": "55.56%"
+    "win rate": "55.22%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "173",
-        "rank europe": "1582",
-        "rank points": "161",
-        "record": "35-23-5",
-        "win rate": "58.2%"
+        "rank germany": "167",
+        "rank europe": "1550",
+        "rank points": "172",
+        "record": "37-23-7",
+        "win rate": "58.7%"
       }
     }
   }
