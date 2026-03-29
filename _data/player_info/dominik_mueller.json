@@ -3,6 +3,7 @@
     "name": "Dominik Müller",
     "country": "de",
     "mtga_rank": {
+      "constructed": "Mythic #629",
       "limited": "Gold 3"
     },
     "win rate": "58.06%"
@@ -16,7 +17,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "276",
-        "rank europe": "2494",
+        "rank europe": "2496",
         "rank points": "81",
         "record": "18-10-3",
         "win rate": "61.3%"
@@ -26,6 +27,7 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
+          "constructed": "Mythic #629",
           "limited": "Gold 3"
         }
       }
