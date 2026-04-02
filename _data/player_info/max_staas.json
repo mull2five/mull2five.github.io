@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Platinum 3"
     },
-    "win rate": "56.32%"
+    "win rate": "57.14%"
   },
   "sources": {
     "Unity League": {
@@ -15,11 +15,11 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "rank germany": "54",
-        "rank europe": "516",
-        "rank points": "441",
-        "record": "25-18-0",
-        "win rate": "58.1%"
+        "rank germany": "52",
+        "rank europe": "496",
+        "rank points": "453",
+        "record": "28-19-0",
+        "win rate": "59.6%"
       }
     },
     "MTG Elo Project": {
