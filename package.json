@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@atproto/api": "^0.19.6",
+    "js-yaml": "^4.1.1"
+  }
+}

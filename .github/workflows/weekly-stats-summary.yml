@@ -1,0 +1,29 @@
+name: Weekly Player Stats Summary
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Every Monday at 08:00 UTC
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  compare-and-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for git show comparison
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install @atproto/api
+
+      - name: Run comparison script
+        env:
+          BLUESKY_HANDLE: mull2five.bsky.social
+          BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+        run: node scripts/compare_stats.js
