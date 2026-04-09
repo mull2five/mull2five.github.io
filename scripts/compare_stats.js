@@ -92,6 +92,11 @@ async function run() {
 
     console.log(`Generated Post:\n---\n${postContent}\n---`);
 
+    const facets = await detectFacets(postContent, null);
+    if (VERBOSE && facets.length > 0) {
+        console.log(`Detected Facets:\n${JSON.stringify(facets, null, 2)}`);
+    }
+
     if (DRY_RUN) {
         console.log("No BlueSky secret provided or --dry-run flag set. Skipping publishing.");
     } else {
@@ -458,8 +463,12 @@ async function publishToBluesky(text) {
     const agent = new BskyAgent({ service: 'https://bsky.social' });
     try {
         await agent.login({ identifier: BLUESKY_HANDLE, password: BLUESKY_PASSWORD });
+
+        const facets = await detectFacets(text, agent);
+
         await agent.post({
             text: text,
+            facets: facets,
             createdAt: new Date().toISOString()
         });
         console.log("Successfully posted to BlueSky!");
@@ -467,6 +476,72 @@ async function publishToBluesky(text) {
         console.error("Failed to publish to BlueSky:", e.message);
         process.exit(1);
     }
+}
+
+async function detectFacets(text, agent) {
+    const facets = [];
+    const utf8Text = new TextEncoder().encode(text);
+
+    // 1. Detect Mentions (@handle.bsky.social)
+    const mentionRegex = /(^|\s)(@)([a-zA-Z0-9.-]+)(\b)/g;
+    let match;
+    while ((match = mentionRegex.exec(text)) !== null) {
+        const fullMatch = match[0];
+        const handle = match[3];
+        const start = match.index + match[1].length; // Skip the leading space if any
+        const end = start + 1 + handle.length; // 1 for @
+
+        const byteStart = new TextEncoder().encode(text.slice(0, start)).byteLength;
+        const byteEnd = new TextEncoder().encode(text.slice(0, end)).byteLength;
+
+        if (agent) {
+            try {
+                const res = await agent.resolveHandle({ handle });
+                if (res.data.did) {
+                    facets.push({
+                        index: { byteStart, byteEnd },
+                        features: [{
+                            $type: 'app.bsky.richtext.facet#mention',
+                            did: res.data.did
+                        }]
+                    });
+                }
+            } catch (e) {
+                console.warn(`Could not resolve handle: ${handle}`);
+            }
+        } else {
+            // Dry run or verbose check without agent
+            facets.push({
+                index: { byteStart, byteEnd },
+                features: [{
+                    $type: 'app.bsky.richtext.facet#mention',
+                    handle: handle // Just for debugging in dry-run
+                }]
+            });
+        }
+    }
+
+    // 2. Detect Hashtags (#Tag)
+    const tagRegex = /(^|\s)(#)([a-zA-Z0-9_]+)(\b)/g;
+    while ((match = tagRegex.exec(text)) !== null) {
+        const tag = match[3];
+        const start = match.index + match[1].length;
+        const end = start + 1 + tag.length; // 1 for #
+
+        const byteStart = new TextEncoder().encode(text.slice(0, start)).byteLength;
+        const byteEnd = new TextEncoder().encode(text.slice(0, end)).byteLength;
+
+        facets.push({
+            index: { byteStart, byteEnd },
+            features: [{
+                $type: 'app.bsky.richtext.facet#tag',
+                tag: tag
+            }]
+        });
+    }
+
+    // Sort facets by byteStart as required by BlueSky
+    return facets.sort((a, b) => a.index.byteStart - b.index.byteStart);
 }
 
 run().catch(err => {
