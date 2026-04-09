@@ -11,14 +11,61 @@ body {
   min-height: 100vh;
 }
 
-.page-content {
-  padding: 40px 20px;
-  max-width: 1000px;
+.site-header {
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 40px 20px;
+  border-bottom: 1px solid #333;
 }
 
-.site-header {
-  margin-bottom: 40px;
+.page-content {
+  padding: 20px 0 40px 0;
+  flex: 1;
+}
+
+.main-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.sidebar {
+  flex: 0 0 350px;
+  padding: 20px 0 40px 0;
+}
+
+.site-footer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 1000px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex: none;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 0;
+}
+
+.bluesky-widget h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
 }
 
 .site-title-container {
@@ -90,6 +137,7 @@ hr {
   border: 0;
   border-top: 1px solid #333;
   margin: 40px 0;
+  display: none;
 }
 
 /* Player Card Styles */
