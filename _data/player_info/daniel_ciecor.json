@@ -5,7 +5,7 @@
     "mtga_rank": {
       "constructed": "Bronze 1"
     },
-    "win rate": "38.10%"
+    "win rate": "37.50%"
   },
   "sources": {
     "Unity League": {
@@ -20,6 +20,16 @@
         "rank points": "83",
         "record": "16-24-2",
         "win rate": "39.7%"
+      }
+    },
+    "MTG Elo Project": {
+      "url": "https://mtgeloproject.net/profile/ngec10ou",
+      "data": {
+        "name": "Daniel Ciecior",
+        "player_id": "ngec10ou",
+        "current_rating": "1380",
+        "record": "17-28-1",
+        "win rate": "36.96%"
       }
     },
     "Untapped.gg": {
