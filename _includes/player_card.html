@@ -1,4 +1,4 @@
-<div class="player-card" onclick="this.classList.toggle('expanded')">
+<div id="{{ include.extra.id }}" class="player-card" onclick="this.classList.toggle('expanded')">
   {% assign player_name = include.extra.name | default: include.player.general.name %}
   {% if player_name == nil or player_name == "" %}
     {% assign name_parts = include.extra.id | split: "_" %}
