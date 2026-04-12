@@ -3,7 +3,6 @@
     "name": "Dominik Müller",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Platinum 2",
       "limited": "Gold 3"
     },
     "win rate": "58.06%"
@@ -16,8 +15,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "283",
-        "rank europe": "2562",
+        "rank germany": "284",
+        "rank europe": "2570",
         "rank points": "81",
         "record": "18-10-3",
         "win rate": "61.3%"
@@ -27,7 +26,6 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
-          "constructed": "Platinum 2",
           "limited": "Gold 3"
         }
       }
