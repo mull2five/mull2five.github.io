@@ -4,7 +4,8 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
-      "constructed": "Platinum 2"
+      "constructed": "Platinum 2",
+      "limited": "Silver 4"
     },
     "win rate": "57.14%"
   },
@@ -16,7 +17,7 @@
         "photo": null,
         "country": "de",
         "rank germany": "53",
-        "rank europe": "530",
+        "rank europe": "534",
         "rank points": "453",
         "record": "28-19-0",
         "win rate": "59.6%"
@@ -44,7 +45,8 @@
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
         "mtga_rank": {
-          "constructed": "Platinum 2"
+          "constructed": "Platinum 2",
+          "limited": "Silver 4"
         }
       }
     }
