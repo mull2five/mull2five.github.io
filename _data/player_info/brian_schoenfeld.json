@@ -2,7 +2,10 @@
   "general": {
     "name": "Brian Schönfeld",
     "country": "de",
-    "win rate": "57.75%"
+    "mtga_rank": {
+      "constructed": "Diamond 2"
+    },
+    "win rate": "57.33%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +15,19 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "169",
-        "rank europe": "1574",
-        "rank points": "187",
-        "record": "41-23-7",
-        "win rate": "61.0%"
+        "rank germany": "161",
+        "rank europe": "1512",
+        "rank points": "196",
+        "record": "43-25-7",
+        "win rate": "60.4%"
+      }
+    },
+    "Untapped.gg": {
+      "url": "https://mtga.untapped.gg/profile/895f47c2-82fd-465e-8d12-f130d4914c1a/TJAWG3QBX5DWNAUBI6XN3Q7PHA",
+      "data": {
+        "mtga_rank": {
+          "constructed": "Diamond 2"
+        }
       }
     }
   }
