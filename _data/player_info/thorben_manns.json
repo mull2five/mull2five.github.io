@@ -3,7 +3,6 @@
     "name": "Thorben Manns",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Platinum 2",
       "limited": "Silver 4"
     },
     "win rate": "48.08%"
@@ -16,8 +15,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "245",
-        "rank europe": "2229",
+        "rank germany": "246",
+        "rank europe": "2233",
         "rank points": "118",
         "record": "25-23-4",
         "win rate": "50.6%"
@@ -27,7 +26,6 @@
       "url": "https://mtga.untapped.gg/profile/26bc5895-e630-4e3c-85de-1ad6d62ed4b2/K4Q4M5EMSNB53KEKGXSKGOZEII",
       "data": {
         "mtga_rank": {
-          "constructed": "Platinum 2",
           "limited": "Silver 4"
         }
       }
