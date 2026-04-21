@@ -2,7 +2,7 @@
   "general": {
     "name": "André Bauer",
     "country": "de",
-    "win rate": "43.33%"
+    "win rate": "44.93%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "230",
-        "rank europe": "2112",
-        "rank points": "133",
-        "record": "26-27-7",
-        "win rate": "47.2%"
+        "rank germany": "213",
+        "rank europe": "1931",
+        "rank points": "155",
+        "record": "31-30-8",
+        "win rate": "48.8%"
       }
     }
   }

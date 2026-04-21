@@ -2,7 +2,7 @@
   "general": {
     "name": "Zdenek Koch",
     "country": "de",
-    "win rate": "32.99%"
+    "win rate": "33.96%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "176",
-        "rank europe": "1636",
-        "rank points": "185",
-        "record": "32-54-11",
-        "win rate": "36.8%"
+        "rank germany": "160",
+        "rank europe": "1523",
+        "rank points": "204",
+        "record": "36-58-12",
+        "win rate": "37.7%"
       }
     }
   }

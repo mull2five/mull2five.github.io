@@ -7,7 +7,7 @@
       "constructed": "Diamond 4",
       "limited": "Silver 3"
     },
-    "win rate": "58.95%"
+    "win rate": "58.59%"
   },
   "sources": {
     "Unity League": {
@@ -16,11 +16,11 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "rank germany": "50",
-        "rank europe": "527",
-        "rank points": "468",
-        "record": "32-19-0",
-        "win rate": "62.7%"
+        "rank germany": "47",
+        "rank europe": "508",
+        "rank points": "477",
+        "record": "34-21-0",
+        "win rate": "61.8%"
       }
     },
     "MTG Elo Project": {
