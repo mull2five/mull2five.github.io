@@ -2,7 +2,6 @@
   "general": {
     "name": "Daniel Ciecior",
     "country": "de",
-    "mtga_rank": {},
     "win rate": "37.50%"
   },
   "sources": {
@@ -14,7 +13,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "294",
-        "rank europe": "2667",
+        "rank europe": "2668",
         "rank points": "83",
         "record": "16-24-2",
         "win rate": "39.7%"
@@ -28,12 +27,6 @@
         "current_rating": "1380",
         "record": "17-28-1",
         "win rate": "36.96%"
-      }
-    },
-    "Untapped.gg": {
-      "url": "https://mtga.untapped.gg/profile/ad2e0136-f347-40ee-8f6a-42b074fbcf1d/762081C58FB3FAF8",
-      "data": {
-        "mtga_rank": {}
       }
     }
   }
