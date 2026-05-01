@@ -2,9 +2,7 @@
   "general": {
     "name": "Thorben Manns",
     "country": "de",
-    "mtga_rank": {
-      "limited": "Silver 1"
-    },
+    "mtga_rank": {},
     "win rate": "50.00%"
   },
   "sources": {
@@ -15,8 +13,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "233",
-        "rank europe": "2126",
+        "rank germany": "234",
+        "rank europe": "2134",
         "rank points": "140",
         "record": "30-25-5",
         "win rate": "52.8%"
@@ -25,9 +23,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/26bc5895-e630-4e3c-85de-1ad6d62ed4b2/K4Q4M5EMSNB53KEKGXSKGOZEII",
       "data": {
-        "mtga_rank": {
-          "limited": "Silver 1"
-        }
+        "mtga_rank": {}
       }
     }
   }
