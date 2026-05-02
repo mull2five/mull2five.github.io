@@ -3,9 +3,7 @@
     "name": "Max Staas",
     "country": "de",
     "pronouns": "He/Him",
-    "mtga_rank": {
-      "constructed": "Platinum 4"
-    },
+    "mtga_rank": {},
     "win rate": "56.31%"
   },
   "sources": {
@@ -17,7 +15,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "46",
-        "rank europe": "538",
+        "rank europe": "540",
         "rank points": "482",
         "record": "34-23-2",
         "win rate": "58.8%"
@@ -44,9 +42,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
-        "mtga_rank": {
-          "constructed": "Platinum 4"
-        }
+        "mtga_rank": {}
       }
     }
   }
