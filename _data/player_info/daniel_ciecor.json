@@ -2,7 +2,7 @@
   "general": {
     "name": "Daniel Ciecior",
     "country": "de",
-    "win rate": "37.50%"
+    "win rate": "38.10%"
   },
   "sources": {
     "Unity League": {
@@ -13,20 +13,10 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "295",
-        "rank europe": "2705",
+        "rank europe": "2712",
         "rank points": "83",
         "record": "16-24-2",
         "win rate": "39.7%"
-      }
-    },
-    "MTG Elo Project": {
-      "url": "https://mtgeloproject.net/profile/ngec10ou",
-      "data": {
-        "name": "Daniel Ciecior",
-        "player_id": "ngec10ou",
-        "current_rating": "1380",
-        "record": "17-28-1",
-        "win rate": "36.96%"
       }
     }
   }
