@@ -509,6 +509,14 @@ function saveStatsChanges(movers) {
         data.players[m.playerId] = m.structuredDiffs;
     });
 
+    if (DRY_RUN) {
+        console.log(`[DRY RUN] Would save stats changes to _data/stats_changes.yml`);
+        if (VERBOSE) {
+            console.log(`--- Content ---\n${yaml.dump(data)}---------------`);
+        }
+        return;
+    }
+
     if (!fs.existsSync('_data')) {
         fs.mkdirSync('_data');
     }
