@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Players Schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the player, matches their filename in _data/player_info"
+      },
+      "name": {
+        "type": "string"
+      },
+      "photo": {
+        "type": "string"
+      },
+      "age": {
+        "type": ["integer", "string"]
+      },
+      "pronouns": {
+        "type": "string"
+      },
+      "hometown": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string",
+        "minLength": 2,
+        "maxLength": 2
+      },
+      "bio": {
+        "type": "string"
+      },
+      "handles": {
+        "type": "object",
+        "properties": {
+          "unity_league": { "type": ["integer", "string"] },
+          "mtg_elo": { "type": "string" },
+          "melee": { "type": "string" },
+          "topdeck": { "type": "string" },
+          "untapped": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "social_media": {
+        "type": "object",
+        "properties": {
+          "bluesky": { "type": "string" },
+          "instagram": { "type": "string" },
+          "cardmarket": { "type": "string" },
+          "twitter": { "type": "string" },
+          "facebook": { "type": "string" },
+          "twitch": { "type": "string" },
+          "youtube": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "required": ["id"],
+    "additionalProperties": false
+  }
+}
