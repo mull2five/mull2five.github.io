@@ -166,6 +166,14 @@ hr {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.stat-change-up {
+  color: #28a745;
+  font-weight: bold;
+  cursor: help;
+  margin-left: 2px;
+  display: inline-block;
+}
+
 .player-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);

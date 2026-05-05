@@ -83,6 +83,7 @@ async function run() {
     }
 
     const timeDescription = getTimeDescription(COMPARE_TARGET);
+    saveStatsChanges(movers);
     const postContent = generatePost(movers, timeDescription);
 
     if (!postContent) {
@@ -172,6 +173,7 @@ function compareStats(playerId, current, old) {
     const context = {
         name: getDisplayName(playerId, current.general.name),
         diffs: [],
+        structuredDiffs: {},
         score: 0
     };
 
@@ -179,14 +181,39 @@ function compareStats(playerId, current, old) {
     compareElo(current, old, context);
     compareUnityLeague(current, old, context);
     compareMtgaRanks(current, old, context);
+    compareSourceWinRates(current, old, context);
 
     return {
         playerId,
         name: context.name,
         diffs: context.diffs,
+        structuredDiffs: context.structuredDiffs,
         score: context.score,
-        hasImprovements: context.diffs.length > 0
+        hasImprovements: Object.keys(context.structuredDiffs).length > 0
     };
+}
+
+function compareSourceWinRates(current, old, context) {
+    const sources = ["Unity League", "MTG Elo Project", "Melee", "Topdeck"];
+    const keyMap = {
+        "Unity League": "ul_win_rate",
+        "MTG Elo Project": "elo_win_rate",
+        "Melee": "melee_win_rate",
+        "Topdeck": "topdeck_win_rate"
+    };
+
+    for (const src of sources) {
+        const currWin = parseFloat(current.sources?.[src]?.data?.["win rate"]);
+        const oldWin = parseFloat(old.sources?.[src]?.data?.["win rate"]);
+        if (isNaN(currWin) || isNaN(oldWin) || currWin <= oldWin) continue;
+
+        const delta = (currWin - oldWin).toFixed(2);
+        if (parseFloat(delta) > 0) {
+            context.structuredDiffs[keyMap[src]] = `+${parseFloat(delta)}%`;
+            // We don't necessarily add all source win rates to BlueSky post to keep it concise,
+            // but we could if we wanted to. For now, just store them in YAML.
+        }
+    }
 }
 
 function compareWinRate(current, old, context) {
@@ -194,10 +221,11 @@ function compareWinRate(current, old, context) {
     const oldWinRate = parseFloat(old.general?.["win rate"]);
     if (isNaN(currWinRate) || isNaN(oldWinRate) || currWinRate <= oldWinRate) return;
 
-    const delta = (currWinRate - oldWinRate).toFixed(1);
+    const delta = (currWinRate - oldWinRate).toFixed(2);
     if (parseFloat(delta) > 0) {
-        context.diffs.push(`boosted win rate by ${delta}% (now ${current.general["win rate"]})`);
+        context.diffs.push(`boosted win rate by ${parseFloat(delta)}% (now ${current.general["win rate"]})`);
         context.score += parseFloat(delta) * SCORE_MULTIPLIERS.WIN_RATE;
+        context.structuredDiffs["win_rate"] = `+${parseFloat(delta)}%`;
     }
 }
 
@@ -212,6 +240,7 @@ function compareElo(current, old, context) {
         const delta = currRating - oldRating;
         context.diffs.push(`gained ${delta} #MTGElo points (now ${currRating})`);
         context.score += delta * SCORE_MULTIPLIERS.ELO;
+        context.structuredDiffs["elo"] = `+${delta}`;
     }
 }
 
@@ -226,6 +255,14 @@ function compareUnityLeague(current, old, context) {
         const delta = oldRank - currRank;
         context.diffs.push(`climbed ${delta} spots in ${HANDLES.UNITY} (now 🇩🇪${currRank})`);
         context.score += delta * SCORE_MULTIPLIERS.UNITY_RANK;
+        context.structuredDiffs["ul_rank_de"] = `+${delta} spots`;
+    }
+
+    const currRankEU = parseInt(currUnity["rank europe"]);
+    const oldRankEU = parseInt(oldUnity["rank europe"]);
+    if (!isNaN(currRankEU) && !isNaN(oldRankEU) && currRankEU < oldRankEU) {
+        const delta = oldRankEU - currRankEU;
+        context.structuredDiffs["ul_rank_eu"] = `+${delta} spots`;
     }
 
     const currPoints = parseInt(currUnity["rank points"]);
@@ -234,6 +271,7 @@ function compareUnityLeague(current, old, context) {
         const delta = currPoints - oldPoints;
         context.diffs.push(`gained ${delta} ${HANDLES.UNITY} points`);
         context.score += delta * SCORE_MULTIPLIERS.UNITY_POINTS;
+        context.structuredDiffs["ul_points"] = `+${delta}`;
     }
 }
 
@@ -254,6 +292,7 @@ function compareMtgaRanks(current, old, context) {
         if (currRank && oldRank && currRank !== oldRank && isBetterMtgaRank(currRank, oldRank)) {
             context.diffs.push(`reached ${currRank} in ${HANDLES.MTGA} ${type}`);
             context.score += SCORE_MULTIPLIERS.MTGA_RANK;
+            context.structuredDiffs[`mtga_rank_${type}`] = `reached ${currRank}`;
         }
     }
 }
@@ -456,6 +495,33 @@ function handleEloHashtag(text, state) {
     } else {
         state.seenShorts.add(shortElo);
         return text;
+    }
+}
+
+function saveStatsChanges(movers) {
+    const comparisonDate = getComparisonDate(COMPARE_TARGET);
+    const data = {
+        comparison_date: comparisonDate,
+        players: {}
+    };
+
+    movers.forEach(m => {
+        data.players[m.playerId] = m.structuredDiffs;
+    });
+
+    if (!fs.existsSync('_data')) {
+        fs.mkdirSync('_data');
+    }
+
+    fs.writeFileSync('_data/stats_changes.yml', yaml.dump(data));
+    console.log(`Saved stats changes to _data/stats_changes.yml`);
+}
+
+function getComparisonDate(target) {
+    try {
+        return execSync(`git show -s --format=%cs "${target}"`, { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'ignore'] }).trim();
+    } catch (e) {
+        return "the last week";
     }
 }
 
