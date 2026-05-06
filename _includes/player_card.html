@@ -10,8 +10,6 @@
 
   {% assign ul = include.player.sources["Unity League"] %}
   {% assign mtg_elo = include.player.sources["MTG Elo Project"] %}
-  {% assign stats_changes = site.data.stats_changes %}
-  {% assign player_changes = stats_changes.players[include.extra.id] %}
 
   {% assign player_photo = include.extra.photo | default: include.player.general.photo %}
   {% if player_photo == nil or player_photo == "" %}
@@ -81,15 +79,15 @@
       <div class="tile-stats-row">
         <div class="tile-stat">
           <span class="tile-stat-label">ELO</span>
-          <span class="tile-stat-value {% unless mtg_elo %}missing{% endunless %}">{% if mtg_elo %}{{ mtg_elo.data.current_rating }}{% else %}n/a{% endif %}{% if player_changes.elo %}<span class="stat-change-up" title="{{ player_changes.elo }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+          <span class="tile-stat-value {% unless mtg_elo %}missing{% endunless %}">{% if mtg_elo %}{{ mtg_elo.data.current_rating }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">DE</span>
-          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["rank germany"] }}{% else %}n/a{% endif %}{% if player_changes.ul_rank_de %}<span class="stat-change-up" title="{{ player_changes.ul_rank_de }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["rank germany"] }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">EU</span>
-          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["rank europe"] }}{% else %}n/a{% endif %}{% if player_changes.ul_rank_eu %}<span class="stat-change-up" title="{{ player_changes.ul_rank_eu }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+          <span class="tile-stat-value {% unless ul %}missing{% endunless %}">{% if ul %}#{{ ul.data["rank europe"] }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">
@@ -98,11 +96,11 @@
             <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws aggregated from all sources"></span>
             {% endif %}
           </span>
-          <span class="tile-stat-value {% unless total_winrate %}missing{% endunless %}">{% if total_winrate %}{{ total_winrate }}{% else %}n/a{% endif %}{% if player_changes.win_rate %}<span class="stat-change-up" title="{{ player_changes.win_rate }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+          <span class="tile-stat-value {% unless total_winrate %}missing{% endunless %}">{% if total_winrate %}{{ total_winrate }}{% else %}n/a{% endif %}</span>
         </div>
         <div class="tile-stat">
           <span class="tile-stat-label">MTGA Rank</span>
-          <span class="tile-stat-value mtga-rank {{ mtga_rank_class }} {% unless include.player.general.mtga_rank.constructed %}missing{% endunless %}">{% if include.player.general.mtga_rank.constructed %}{{ include.player.general.mtga_rank.constructed }}{% else %}n/a{% endif %}{% if player_changes.mtga_rank_constructed %}<span class="stat-change-up" title="{{ player_changes.mtga_rank_constructed }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+          <span class="tile-stat-value mtga-rank {{ mtga_rank_class }} {% unless include.player.general.mtga_rank.constructed %}missing{% endunless %}">{% if include.player.general.mtga_rank.constructed %}{{ include.player.general.mtga_rank.constructed }}{% else %}n/a{% endif %}</span>
         </div>
       </div>
     </div>
@@ -186,22 +184,22 @@
           {% if ul %}
           <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">Unity League Rank DE</span>
-            <span class="stat-value">{{ ul.data["rank germany"] }}{% if player_changes.ul_rank_de %}<span class="stat-change-up" title="{{ player_changes.ul_rank_de }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value">{{ ul.data["rank germany"] }}</span>
           </a>
           <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">Unity League Rank EU</span>
-            <span class="stat-value">{{ ul.data["rank europe"] }}{% if player_changes.ul_rank_eu %}<span class="stat-change-up" title="{{ player_changes.ul_rank_eu }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value">{{ ul.data["rank europe"] }}</span>
           </a>
           <a href="{{ ul.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">Unity League Points</span>
-            <span class="stat-value">{{ ul.data["rank points"] }}{% if player_changes.ul_points %}<span class="stat-change-up" title="{{ player_changes.ul_points }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value">{{ ul.data["rank points"] }}</span>
           </a>
           {% endif %}
 
           {% if mtg_elo %}
           <a href="{{ mtg_elo.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">MTG Elo Rating</span>
-            <span class="stat-value">{{ mtg_elo.data.current_rating }}{% if player_changes.elo %}<span class="stat-change-up" title="{{ player_changes.elo }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value">{{ mtg_elo.data.current_rating }}</span>
           </a>
           {% endif %}
 
@@ -209,13 +207,13 @@
           {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.constructed %}
           <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">MTGA Rank Constructed</span>
-            <span class="stat-value mtga-rank {{ mtga_rank_class }}">{{ untapped.data.mtga_rank.constructed }}{% if player_changes.mtga_rank_constructed %}<span class="stat-change-up" title="{{ player_changes.mtga_rank_constructed }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value mtga-rank {{ mtga_rank_class }}">{{ untapped.data.mtga_rank.constructed }}</span>
           </a>
           {% endif %}
           {% if untapped and untapped.data and untapped.data.mtga_rank and untapped.data.mtga_rank.limited %}
           <a href="{{ untapped.url }}" target="_blank" class="stat-item linked-stat">
             <span class="stat-label">MTGA Rank Limited</span>
-            <span class="stat-value mtga-rank {{ mtga_limited_rank_class }}">{{ untapped.data.mtga_rank.limited }}{% if player_changes.mtga_rank_limited %}<span class="stat-change-up" title="{{ player_changes.mtga_rank_limited }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}</span>
+            <span class="stat-value mtga-rank {{ mtga_limited_rank_class }}">{{ untapped.data.mtga_rank.limited }}</span>
           </a>
           {% endif %}
         </div>
@@ -243,7 +241,7 @@
               Unity League Winrate
               <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on achieved match points, i.e. counting draws as 1/3 of a win"></span>
             </span>
-            {{ ul.data["win rate"] }}{% if player_changes.ul_win_rate %}<span class="stat-change-up" title="{{ player_changes.ul_win_rate }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}
+            {{ ul.data["win rate"] }}
           </a>
           {% endif %}
 
@@ -260,7 +258,7 @@
               MTG Elo Winrate
               <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
             </span>
-            {{ mtg_elo.data["win rate"] }}{% if player_changes.elo_win_rate %}<span class="stat-change-up" title="{{ player_changes.elo_win_rate }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}
+            {{ mtg_elo.data["win rate"] }}
           </a>
           {% endif %}
 
@@ -277,7 +275,7 @@
               Melee Winrate
               <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
             </span>
-            {{ melee.data["win rate"] }}{% if player_changes.melee_win_rate %}<span class="stat-change-up" title="{{ player_changes.melee_win_rate }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}
+            {{ melee.data["win rate"] }}
           </a>
           {% endif %}
 
@@ -294,7 +292,7 @@
               Topdeck Winrate
               <span class="iconify info-icon" data-icon="mdi-information-slab-circle-outline" title="Win rate based on wins vs. sum of losses and draws"></span>
             </span>
-            {{ topdeck.data["win rate"] }}{% if player_changes.topdeck_win_rate %}<span class="stat-change-up" title="{{ player_changes.topdeck_win_rate }} since {{ stats_changes.comparison_date }}">↑</span>{% endif %}
+            {{ topdeck.data["win rate"] }}
           </a>
           {% endif %}
         </div>
