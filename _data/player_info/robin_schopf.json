@@ -1,22 +1,20 @@
 {
+  "name": "Robin Schopf",
+  "photo": null,
   "general": {
-    "name": "Robin Schopf",
-    "country": "de",
-    "win rate": "50.00%"
+    "Country": "de",
+    "Win Rate": "50.00%"
   },
   "sources": {
     "Unity League": {
       "url": "https://unityleague.gg/player/33406/",
       "data": {
-        "name": "Robin Schopf",
-        "photo": null,
-        "country": "de",
-        "local organizer": "Mulligan TCG Shop",
-        "rank germany": "325",
-        "rank europe": "3037",
-        "rank points": "60",
-        "record": "13-13-0",
-        "win rate": "50.0%"
+        "Local organizer": "Mulligan TCG Shop",
+        "Rank Germany": "325th",
+        "Rank Europe": "3039th",
+        "Rank Points": "60",
+        "Record": "13-13-0",
+        "Win Rate": "50.0%"
       }
     }
   }
