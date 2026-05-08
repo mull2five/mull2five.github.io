@@ -17,10 +17,18 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "279",
-        "rank europe": "2537",
+        "rank europe": "2538",
         "rank points": "102",
         "record": "23-13-3",
         "win rate": "61.5%"
+      }
+    },
+    "Melee": {
+      "url": "https://melee.gg/Profile/Index/Blackwell",
+      "data": {
+        "name": "Blackwell",
+        "pronouns": null,
+        "bio": null
       }
     },
     "Untapped.gg": {
