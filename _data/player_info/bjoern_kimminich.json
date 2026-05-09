@@ -8,6 +8,8 @@
     "country": "de",
     "hometown": "Hamburg",
     "pronouns": "He/Him",
+    "facebook": "bjoern.kimminich",
+    "twitch": "koshiii",
     "youtube": "@BjörnKimminich",
     "mtga_rank": {
       "constructed": "Platinum 4",
@@ -28,7 +30,7 @@
         "team": "Mull to Five",
         "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face with its \"Change the target of target spell or ability with a single target\" mode.",
         "rank germany": "47",
-        "rank europe": "536",
+        "rank europe": "539",
         "rank points": "494",
         "record": "88-77-9",
         "win rate": "52.3%"
@@ -47,9 +49,12 @@
     "Melee": {
       "url": "https://melee.gg/Profile/Index/k0shiii",
       "data": {
-        "name": "k0shiii",
-        "pronouns": null,
-        "bio": null
+        "name": "Björn Kimminich",
+        "pronouns": "He/Him",
+        "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face.",
+        "facebook": "bjoern.kimminich",
+        "twitch": "koshiii",
+        "youtube": "@BjörnKimminich"
       }
     },
     "Topdeck": {

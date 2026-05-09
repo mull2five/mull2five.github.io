@@ -2,6 +2,7 @@
   "general": {
     "name": "Max Staas",
     "country": "de",
+    "pronouns": "He/Him",
     "mtga_rank": {
       "constructed": "Platinum 1"
     },
@@ -16,7 +17,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "49",
-        "rank europe": "562",
+        "rank europe": "565",
         "rank points": "482",
         "record": "34-23-2",
         "win rate": "58.8%"
@@ -35,8 +36,8 @@
     "Melee": {
       "url": "https://melee.gg/Profile/Index/BullletTime",
       "data": {
-        "name": "BullletTime",
-        "pronouns": null,
+        "name": "Max Staas",
+        "pronouns": "He/Him",
         "bio": null
       }
     },

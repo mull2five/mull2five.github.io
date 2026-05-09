@@ -2,8 +2,9 @@
   "general": {
     "name": "Dominik Müller",
     "country": "de",
+    "pronouns": "He/Him",
     "mtga_rank": {
-      "constructed": "Diamond 4",
+      "constructed": "Diamond 3",
       "limited": "Silver 4"
     },
     "win rate": "58.97%"
@@ -16,8 +17,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "279",
-        "rank europe": "2538",
+        "rank germany": "280",
+        "rank europe": "2546",
         "rank points": "102",
         "record": "23-13-3",
         "win rate": "61.5%"
@@ -26,8 +27,8 @@
     "Melee": {
       "url": "https://melee.gg/Profile/Index/Blackwell",
       "data": {
-        "name": "Blackwell",
-        "pronouns": null,
+        "name": "Dominik Müller",
+        "pronouns": "He/Him",
         "bio": null
       }
     },
@@ -35,7 +36,7 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
-          "constructed": "Diamond 4",
+          "constructed": "Diamond 3",
           "limited": "Silver 4"
         }
       }
