@@ -4,8 +4,8 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
-      "constructed": "Diamond 3",
-      "limited": "Silver 4"
+      "constructed": "Diamond 1",
+      "limited": "Silver 3"
     },
     "win rate": "58.97%"
   },
@@ -18,7 +18,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "280",
-        "rank europe": "2546",
+        "rank europe": "2556",
         "rank points": "102",
         "record": "23-13-3",
         "win rate": "61.5%"
@@ -36,8 +36,8 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
-          "constructed": "Diamond 3",
-          "limited": "Silver 4"
+          "constructed": "Diamond 1",
+          "limited": "Silver 3"
         }
       }
     }
