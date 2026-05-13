@@ -4,7 +4,7 @@
     "country": "de",
     "mtga_rank": {
       "constructed": "Platinum 4",
-      "limited": "Silver 4"
+      "limited": "Gold 2"
     },
     "win rate": "50.00%"
   },
@@ -17,7 +17,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "236",
-        "rank europe": "2159",
+        "rank europe": "2163",
         "rank points": "149",
         "record": "32-27-5",
         "win rate": "52.6%"
@@ -28,7 +28,7 @@
       "data": {
         "mtga_rank": {
           "constructed": "Platinum 4",
-          "limited": "Silver 4"
+          "limited": "Gold 2"
         }
       }
     }
