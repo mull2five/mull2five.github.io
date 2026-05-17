@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Mythic #234"
     },
-    "win rate": "54.43%"
+    "win rate": "54.84%"
   },
   "sources": {
     "Unity League": {
@@ -16,8 +16,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "29",
-        "rank europe": "331",
+        "rank germany": "30",
+        "rank europe": "334",
         "rank points": "650",
         "record": "42-29-3",
         "win rate": "58.1%"
@@ -28,9 +28,9 @@
       "data": {
         "name": "Max Staas",
         "player_id": "e40ljd9z",
-        "current_rating": "1622",
-        "record": "24-20-0",
-        "win rate": "54.55%"
+        "current_rating": "1654",
+        "record": "32-26-1",
+        "win rate": "54.24%"
       }
     },
     "Melee": {
