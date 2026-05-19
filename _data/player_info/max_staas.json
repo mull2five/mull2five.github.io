@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Mythic #234"
     },
-    "win rate": "54.84%"
+    "win rate": "54.64%"
   },
   "sources": {
     "Unity League": {
@@ -17,10 +17,10 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "31",
-        "rank europe": "346",
-        "rank points": "650",
-        "record": "42-29-3",
-        "win rate": "58.1%"
+        "rank europe": "338",
+        "rank points": "659",
+        "record": "44-31-3",
+        "win rate": "57.7%"
       }
     },
     "MTG Elo Project": {
