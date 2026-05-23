@@ -2,7 +2,7 @@
   "general": {
     "name": "Björn Kimminich",
     "photo": "https://unityleague.gg/media/player_profile/1000023225.jpg",
-    "age": "45",
+    "age": "46",
     "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face with its \"Change the target of target spell or ability with a single target\" mode.",
     "team": "Mull to Five",
     "country": "de",
@@ -15,7 +15,7 @@
       "constructed": "Platinum 4",
       "limited": "Bronze 4"
     },
-    "win rate": "50.00%"
+    "win rate": "49.54%"
   },
   "sources": {
     "Unity League": {
@@ -24,16 +24,16 @@
         "name": "Björn Kimminich",
         "photo": "https://unityleague.gg/media/player_profile/1000023225.jpg",
         "country": "de",
-        "age": "45",
+        "age": "46",
         "hometown": "Hamburg",
         "local organizer": "Mulligan TCG Shop",
         "team": "Mull to Five",
         "bio": "Smugly held back on an Untimely Malfunction against a Storm player going off, being totally sure that you can redirect the summed-up damage of their Grapeshots back to their face with its \"Change the target of target spell or ability with a single target\" mode.",
         "rank germany": "40",
-        "rank europe": "487",
+        "rank europe": "496",
         "rank points": "562",
-        "record": "97-86-9",
-        "win rate": "52.1%"
+        "record": "98-89-9",
+        "win rate": "51.5%"
       }
     },
     "MTG Elo Project": {
