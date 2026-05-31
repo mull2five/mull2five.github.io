@@ -2,7 +2,7 @@
   "general": {
     "name": "Fabian Alex",
     "country": "de",
-    "win rate": "51.72%"
+    "win rate": "52.38%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "269",
-        "rank europe": "2398",
-        "rank points": "138",
-        "record": "30-25-3",
-        "win rate": "53.4%"
+        "rank germany": "257",
+        "rank europe": "2308",
+        "rank points": "150",
+        "record": "33-27-3",
+        "win rate": "54.0%"
       }
     }
   }
