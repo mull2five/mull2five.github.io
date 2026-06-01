@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Mythic #1460"
     },
-    "win rate": "58.97%"
+    "win rate": "55.32%"
   },
   "sources": {
     "Unity League": {
@@ -16,11 +16,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "300",
-        "rank europe": "2749",
-        "rank points": "102",
-        "record": "23-13-3",
-        "win rate": "61.5%"
+        "rank germany": "235",
+        "rank europe": "2123",
+        "rank points": "174",
+        "record": "26-18-3",
+        "win rate": "57.4%"
       }
     },
     "Melee": {
