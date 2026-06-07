@@ -4,7 +4,8 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
-      "limited": "Bronze 2"
+      "constructed": "Platinum 4",
+      "limited": "Silver 3"
     },
     "win rate": "52.78%"
   },
@@ -45,7 +46,8 @@
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
         "mtga_rank": {
-          "limited": "Bronze 2"
+          "constructed": "Platinum 4",
+          "limited": "Silver 3"
         }
       }
     }
