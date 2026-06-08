@@ -4,8 +4,8 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
-      "constructed": "Platinum 3",
-      "limited": "Silver 2"
+      "constructed": "Platinum 2",
+      "limited": "Silver 1"
     },
     "win rate": "55.32%"
   },
@@ -17,8 +17,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "241",
-        "rank europe": "2162",
+        "rank germany": "242",
+        "rank europe": "2173",
         "rank points": "174",
         "record": "26-18-3",
         "win rate": "57.4%"
@@ -36,8 +36,8 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
-          "constructed": "Platinum 3",
-          "limited": "Silver 2"
+          "constructed": "Platinum 2",
+          "limited": "Silver 1"
         }
       }
     }
