@@ -3,7 +3,9 @@
     "name": "Dominik Müller",
     "country": "de",
     "pronouns": "He/Him",
-    "mtga_rank": {},
+    "mtga_rank": {
+      "constructed": "Diamond 4"
+    },
     "win rate": "55.32%"
   },
   "sources": {
@@ -14,8 +16,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "245",
-        "rank europe": "2203",
+        "rank germany": "246",
+        "rank europe": "2210",
         "rank points": "174",
         "record": "26-18-3",
         "win rate": "57.4%"
@@ -32,7 +34,9 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
-        "mtga_rank": {}
+        "mtga_rank": {
+          "constructed": "Diamond 4"
+        }
       }
     }
   }
