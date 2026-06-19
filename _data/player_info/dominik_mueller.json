@@ -2,7 +2,6 @@
   "general": {
     "name": "Dominik Müller",
     "country": "de",
-    "pronouns": "He/Him",
     "mtga_rank": {
       "constructed": "Diamond 3"
     },
@@ -17,18 +16,10 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "246",
-        "rank europe": "2273",
+        "rank europe": "2277",
         "rank points": "174",
         "record": "26-18-3",
         "win rate": "57.4%"
-      }
-    },
-    "Melee": {
-      "url": "https://melee.gg/Profile/Index/Blackwell",
-      "data": {
-        "name": "Dominik Müller",
-        "pronouns": "He/Him",
-        "bio": null
       }
     },
     "Untapped.gg": {

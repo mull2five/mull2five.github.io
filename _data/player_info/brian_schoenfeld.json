@@ -3,7 +3,6 @@
     "name": "Brian Schönfeld",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Mythic #901",
       "limited": "Silver 2"
     },
     "win rate": "58.04%"
@@ -17,7 +16,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "161",
-        "rank europe": "1496",
+        "rank europe": "1499",
         "rank points": "289",
         "record": "65-37-10",
         "win rate": "61.0%"
@@ -27,7 +26,6 @@
       "url": "https://mtga.untapped.gg/profile/895f47c2-82fd-465e-8d12-f130d4914c1a/TJAWG3QBX5DWNAUBI6XN3Q7PHA",
       "data": {
         "mtga_rank": {
-          "constructed": "Mythic #901",
           "limited": "Silver 2"
         }
       }
