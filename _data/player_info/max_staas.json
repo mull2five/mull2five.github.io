@@ -2,6 +2,7 @@
   "general": {
     "name": "Max Staas",
     "country": "de",
+    "pronouns": "He/Him",
     "mtga_rank": {
       "limited": "Silver 3"
     },
@@ -16,7 +17,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "35",
-        "rank europe": "401",
+        "rank europe": "402",
         "rank points": "705",
         "record": "50-43-4",
         "win rate": "52.9%"
@@ -27,9 +28,17 @@
       "data": {
         "name": "Max Staas",
         "player_id": "e40ljd9z",
-        "current_rating": "1654",
-        "record": "32-26-1",
-        "win rate": "54.24%"
+        "current_rating": "1591",
+        "record": "36-33-1",
+        "win rate": "51.43%"
+      }
+    },
+    "Melee": {
+      "url": "https://melee.gg/Profile/Index/BullletTime",
+      "data": {
+        "name": "Max Staas",
+        "pronouns": "He/Him",
+        "bio": null
       }
     },
     "Untapped.gg": {
