@@ -2,9 +2,7 @@
   "general": {
     "name": "Brian Schönfeld",
     "country": "de",
-    "mtga_rank": {
-      "constructed": "Mythic #295"
-    },
+    "mtga_rank": {},
     "win rate": "56.90%"
   },
   "sources": {
@@ -16,7 +14,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "165",
-        "rank europe": "1548",
+        "rank europe": "1555",
         "rank points": "295",
         "record": "66-40-10",
         "win rate": "59.8%"
@@ -25,9 +23,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/895f47c2-82fd-465e-8d12-f130d4914c1a/TJAWG3QBX5DWNAUBI6XN3Q7PHA",
       "data": {
-        "mtga_rank": {
-          "constructed": "Mythic #295"
-        }
+        "mtga_rank": {}
       }
     }
   }
