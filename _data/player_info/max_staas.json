@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Gold 4"
     },
-    "win rate": "50.86%"
+    "win rate": "51.61%"
   },
   "sources": {
     "Unity League": {
@@ -17,7 +17,7 @@
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
         "rank germany": "44",
-        "rank europe": "511",
+        "rank europe": "515",
         "rank points": "705",
         "record": "50-43-4",
         "win rate": "52.9%"
@@ -28,9 +28,9 @@
       "data": {
         "name": "Max Staas",
         "player_id": "e40ljd9z",
-        "current_rating": "1591",
-        "record": "36-33-1",
-        "win rate": "51.43%"
+        "current_rating": "1623",
+        "record": "41-36-1",
+        "win rate": "52.56%"
       }
     },
     "Melee": {
