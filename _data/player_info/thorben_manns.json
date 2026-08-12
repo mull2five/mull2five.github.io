@@ -2,10 +2,6 @@
   "general": {
     "name": "Thorben Manns",
     "country": "de",
-    "mtga_rank": {
-      "constructed": "Gold 4",
-      "limited": "Gold 4"
-    },
     "win rate": "51.39%"
   },
   "sources": {
@@ -16,20 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "294",
-        "rank europe": "2611",
+        "rank germany": "296",
+        "rank europe": "2616",
         "rank points": "170",
         "record": "37-30-5",
         "win rate": "53.7%"
-      }
-    },
-    "Untapped.gg": {
-      "url": "https://mtga.untapped.gg/profile/26bc5895-e630-4e3c-85de-1ad6d62ed4b2/K4Q4M5EMSNB53KEKGXSKGOZEII",
-      "data": {
-        "mtga_rank": {
-          "constructed": "Gold 4",
-          "limited": "Gold 4"
-        }
       }
     }
   }
