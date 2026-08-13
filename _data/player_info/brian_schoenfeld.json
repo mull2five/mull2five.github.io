@@ -3,9 +3,9 @@
     "name": "Brian Schönfeld",
     "country": "de",
     "mtga_rank": {
-      "constructed": "Mythic #105"
+      "constructed": "Mythic #46"
     },
-    "win rate": "58.91%"
+    "win rate": "58.82%"
   },
   "sources": {
     "Unity League": {
@@ -15,18 +15,18 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "164",
-        "rank europe": "1545",
-        "rank points": "338",
-        "record": "76-42-11",
-        "win rate": "61.8%"
+        "rank germany": "157",
+        "rank europe": "1475",
+        "rank points": "356",
+        "record": "80-45-11",
+        "win rate": "61.5%"
       }
     },
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/895f47c2-82fd-465e-8d12-f130d4914c1a/TJAWG3QBX5DWNAUBI6XN3Q7PHA",
       "data": {
         "mtga_rank": {
-          "constructed": "Mythic #105"
+          "constructed": "Mythic #46"
         }
       }
     }

@@ -4,6 +4,7 @@
     "country": "de",
     "pronouns": "He/Him",
     "mtga_rank": {
+      "constructed": "Mythic #1513",
       "limited": "Gold 4"
     },
     "win rate": "56.86%"
@@ -16,8 +17,8 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "282",
-        "rank europe": "2495",
+        "rank germany": "284",
+        "rank europe": "2500",
         "rank points": "187",
         "record": "29-18-4",
         "win rate": "59.5%"
@@ -35,6 +36,7 @@
       "url": "https://mtga.untapped.gg/profile/ade5c4dd-0dc9-4d75-bb41-fd841d0b6e2f/LM33HLINURHKLLISRPKNEBIWVQ",
       "data": {
         "mtga_rank": {
+          "constructed": "Mythic #1513",
           "limited": "Gold 4"
         }
       }

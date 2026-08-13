@@ -2,7 +2,7 @@
   "general": {
     "name": "Thorben Manns",
     "country": "de",
-    "win rate": "51.39%"
+    "win rate": "49.37%"
   },
   "sources": {
     "Unity League": {
@@ -12,11 +12,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "296",
-        "rank europe": "2616",
-        "rank points": "170",
-        "record": "37-30-5",
-        "win rate": "53.7%"
+        "rank germany": "286",
+        "rank europe": "2518",
+        "rank points": "184",
+        "record": "39-33-7",
+        "win rate": "52.3%"
       }
     }
   }
