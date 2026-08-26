@@ -6,7 +6,7 @@
     "mtga_rank": {
       "constructed": "Platinum 3"
     },
-    "win rate": "51.61%"
+    "win rate": "52.52%"
   },
   "sources": {
     "Unity League": {
@@ -16,11 +16,11 @@
         "photo": null,
         "country": "de",
         "local organizer": "Mulligan TCG Shop",
-        "rank germany": "49",
-        "rank europe": "588",
-        "rank points": "705",
-        "record": "50-43-4",
-        "win rate": "52.9%"
+        "rank germany": "24",
+        "rank europe": "355",
+        "rank points": "909",
+        "record": "59-48-5",
+        "win rate": "54.2%"
       }
     },
     "MTG Elo Project": {
