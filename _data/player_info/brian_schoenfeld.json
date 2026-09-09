@@ -2,9 +2,7 @@
   "general": {
     "name": "Brian Schönfeld",
     "country": "de",
-    "mtga_rank": {
-      "constructed": "Diamond 2"
-    },
+    "mtga_rank": {},
     "win rate": "58.82%"
   },
   "sources": {
@@ -25,9 +23,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/895f47c2-82fd-465e-8d12-f130d4914c1a/TJAWG3QBX5DWNAUBI6XN3Q7PHA",
       "data": {
-        "mtga_rank": {
-          "constructed": "Diamond 2"
-        }
+        "mtga_rank": {}
       }
     }
   }
