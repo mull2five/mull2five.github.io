@@ -2,7 +2,9 @@
   "general": {
     "name": "Thorben Manns",
     "country": "de",
-    "mtga_rank": {},
+    "mtga_rank": {
+      "constructed": "Diamond 3"
+    },
     "win rate": "49.37%"
   },
   "sources": {
@@ -24,7 +26,9 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/26bc5895-e630-4e3c-85de-1ad6d62ed4b2/K4Q4M5EMSNB53KEKGXSKGOZEII",
       "data": {
-        "mtga_rank": {}
+        "mtga_rank": {
+          "constructed": "Diamond 3"
+        }
       }
     }
   }
