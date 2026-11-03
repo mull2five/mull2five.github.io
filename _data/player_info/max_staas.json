@@ -5,7 +5,7 @@
     "pronouns": "He/Him",
     "mtga_rank": {
       "constructed": "Platinum 4",
-      "limited": "Diamond 3"
+      "limited": "Gold 4"
     },
     "win rate": "52.91%"
   },
@@ -30,7 +30,7 @@
       "data": {
         "name": "Max Staas",
         "player_id": "e40ljd9z",
-        "current_rating": "1623",
+        "current_rating": "1624",
         "record": "41-36-1",
         "win rate": "52.56%"
       }
@@ -48,7 +48,7 @@
       "data": {
         "mtga_rank": {
           "constructed": "Platinum 4",
-          "limited": "Diamond 3"
+          "limited": "Gold 4"
         }
       }
     }
