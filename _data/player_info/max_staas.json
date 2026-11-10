@@ -7,7 +7,7 @@
       "constructed": "Gold 3",
       "limited": "Platinum 4"
     },
-    "win rate": "52.91%"
+    "win rate": "55.43%"
   },
   "sources": {
     "Unity League": {
@@ -16,13 +16,12 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "local organizer": "Mulligan TCG Shop",
-        "rank germany": "34",
-        "rank europe": "429",
-        "rank global": "429",
-        "rank points": "909",
-        "record": "59-48-5",
-        "win rate": "54.2%"
+        "rank germany": "52",
+        "rank europe": "570",
+        "rank global": "1136",
+        "rank points": "136",
+        "record": "10-4-1",
+        "win rate": "68.9%"
       }
     },
     "MTG Elo Project": {

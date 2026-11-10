@@ -3,7 +3,7 @@
     "name": "Julian Lamprecht",
     "country": "de",
     "pronouns": "He/Him",
-    "win rate": "61.57%"
+    "win rate": "52.11%"
   },
   "sources": {
     "Unity League": {
@@ -12,13 +12,12 @@
         "name": "Julian Lamprecht",
         "photo": null,
         "country": "de",
-        "local organizer": "Mulligan TCG Shop",
-        "rank germany": "20",
-        "rank europe": "301",
-        "rank global": "301",
-        "rank points": "1046",
-        "record": "128-67-7",
-        "win rate": "64.5%"
+        "rank germany": "73",
+        "rank europe": "820",
+        "rank global": "1858",
+        "rank points": "106",
+        "record": "8-9-1",
+        "win rate": "46.3%"
       }
     },
     "MTG Elo Project": {
