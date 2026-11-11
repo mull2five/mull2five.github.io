@@ -14,7 +14,7 @@
     "mtga_rank": {
       "constructed": "Gold 4"
     },
-    "win rate": "48.54%"
+    "win rate": "48.25%"
   },
   "sources": {
     "Unity League": {
@@ -55,20 +55,6 @@
         "facebook": "bjoern.kimminich",
         "twitch": "koshiii",
         "youtube": "@BjörnKimminich"
-      }
-    },
-    "Topdeck": {
-      "url": "https://topdeck.gg/profile/@k0shiii",
-      "data": {
-        "name": "Björn Kimminich",
-        "photo": "https://imagedelivery.net/kN_u_RUfFF6xsGMKYWhO1g/2a7b8d12-5924-4a58-5f9c-c0bf55766800/square",
-        "pronouns": "He/Him",
-        "twitter": "bkimminich",
-        "youtube": "@BjörnKimminich",
-        "tournaments": "5",
-        "record": "12-9-2",
-        "win rate": "52.17%",
-        "conversion": "–"
       }
     },
     "Untapped.gg": {
