@@ -3,9 +3,7 @@
     "name": "Max Staas",
     "country": "de",
     "pronouns": "He/Him",
-    "mtga_rank": {
-      "constructed": "Diamond 4"
-    },
+    "mtga_rank": {},
     "win rate": "55.43%"
   },
   "sources": {
@@ -15,9 +13,9 @@
         "name": "Max Staas",
         "photo": null,
         "country": "de",
-        "rank germany": "61",
-        "rank europe": "645",
-        "rank global": "1721",
+        "rank germany": "62",
+        "rank europe": "651",
+        "rank global": "1727",
         "rank points": "136",
         "record": "10-4-1",
         "win rate": "68.9%"
@@ -44,9 +42,7 @@
     "Untapped.gg": {
       "url": "https://mtga.untapped.gg/profile/e9d6fb9b-1f91-4063-8b28-0d46458d01a9/ZTATRXEQEJHUDOO52NWQCJGMQY",
       "data": {
-        "mtga_rank": {
-          "constructed": "Diamond 4"
-        }
+        "mtga_rank": {}
       }
     }
   }
